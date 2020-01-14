@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	
+	>
+<channel>
+	<title>
+	Comments on: Clientseitige asynchrone Serviceaufrufe mit der ChannelFactory	</title>
+	<atom:link href="/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/feed/" rel="self" type="application/rss+xml" />
+	<link>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:40:58 +0000</lastBuildDate>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+			<item>
+				<title>
+				By: Markus				</title>
+				<link>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/#comment-2</link>
+		<dc:creator><![CDATA[Markus]]></dc:creator>
+		<pubDate>Tue, 28 Oct 2014 08:51:14 +0000</pubDate>
+		<guid isPermaLink="false">http://flenny.wordpress.com/?p=37#comment-2</guid>
+					<description><![CDATA[Der Post ist zwar jetzt schon ein wenig gealtert...aber vllt kann mir ja trotzdem jemand helfen...
+
+Wo muss ich folgende Erweiterung einbauen...
+
+Den TimeOut erhöhen und die Maximale Übertragungsmenge erhöhen... ich hab das Programm etwas erweitert und lasse vom Server einen String zurück geben...ab einer gewissen Größe bricht das Programm halt ab...weil der String zu lang ist bzw weil es zu nem TimeOut kommt]]></description>
+		<content:encoded><![CDATA[<p>Der Post ist zwar jetzt schon ein wenig gealtert&#8230;aber vllt kann mir ja trotzdem jemand helfen&#8230;</p>
+<p>Wo muss ich folgende Erweiterung einbauen&#8230;</p>
+<p>Den TimeOut erhöhen und die Maximale Übertragungsmenge erhöhen&#8230; ich hab das Programm etwas erweitert und lasse vom Server einen String zurück geben&#8230;ab einer gewissen Größe bricht das Programm halt ab&#8230;weil der String zu lang ist bzw weil es zu nem TimeOut kommt</p>
+]]></content:encoded>
+						</item>
+			</channel>
+</rss>

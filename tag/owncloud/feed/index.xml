@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>ownCloud &#8211; Oliver Gut</title>
+	<atom:link href="/tag/owncloud/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Fri, 16 Sep 2016 17:38:23 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>ownCloud &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Fix error &#8216;index.php was not found on this server&#8217; after upgrading ownCloud to version 9</title>
+		<link>/2016/owncloud-9-fix-error-index-php-was-not-found/</link>
+				<comments>/2016/owncloud-9-fix-error-index-php-was-not-found/#respond</comments>
+				<pubDate>Wed, 09 Mar 2016 22:05:00 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[ownCloud]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">/2016/owncloud-9-fix-error-index-php-was-not-found/</guid>
+				<description><![CDATA[If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using apt-get dist upgrade), you probably get the error message shown above. Adding /index.php manually still redirects to the ownCloud login screen. As mentioned here open .htaccess in /var/www/owncloud an comment out the line RewriteRule .* index.php [PT,E=PATH_INFO:$1] and restart apache with service apache2 restart]]></description>
+								<content:encoded><![CDATA[<p>If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using <code>apt-get dist upgrade</code>), you probably get the error message shown above. Adding <code>/index.php</code> manually still redirects to the ownCloud login screen.</p>
+<p>As mentioned <a href="https://github.com/owncloud/core/issues/22970">here</a> open <code>.htaccess</code> in <code>/var/www/owncloud</code> an comment out<br />
+the line</p>
+<pre><code>RewriteRule .* index.php [PT,E=PATH_INFO:$1]</code></pre>
+<p>and restart apache with</p>
+<pre><code>service apache2 restart</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/owncloud-9-fix-error-index-php-was-not-found/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

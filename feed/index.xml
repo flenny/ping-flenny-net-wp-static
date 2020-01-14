@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Oliver Gut</title>
+	<atom:link href="/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 02 Feb 2019 13:27:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>TCP and UDP ports used by Apple Filing Protocol (AFP)</title>
+		<link>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/</link>
+				<comments>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/#respond</comments>
+				<pubDate>Fri, 25 Nov 2016 14:01:16 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[AFP]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Apple Filing Protocol]]></category>
+		<category><![CDATA[OMV]]></category>
+		<category><![CDATA[OpenMediaVault]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=436</guid>
+				<description><![CDATA[This weekend I have activated the Apple Filing plugin for my OpenMediaVault server in order to improve the overall experience in accessing data from my MacBook. Due to the fact that the firewall on the OMV server is enabled and drops all incoming connections by default, I had to open the ports used by Apples Filing Protocol manually. Port Protocol [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>This weekend I have activated the Apple Filing plugin for my OpenMediaVault server in order to improve the overall experience in accessing data from my MacBook. Due to the fact that the firewall on the OMV server is enabled and drops all incoming connections by default, I had to open the ports used by Apples Filing Protocol manually.<span id="more-436"></span></p>
+<table border="0">
+<tbody>
+<tr>
+<th><strong>Port</strong></th>
+<th><strong>Protocol</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+<tr>
+<td><strong>427</strong></td>
+<td>TCP</td>
+<td>Service Location Protocol (SLP)</td>
+<td>Network Browser, Authentication</td>
+</tr>
+<tr>
+<td><strong>523</strong></td>
+<td>TCP</td>
+<td>Apple Filing Protocol (AFP)</td>
+<td>Apple File Service</td>
+</tr>
+<tr>
+<td><strong>5353</strong></td>
+<td>UDP</td>
+<td>Multicast DNS (MDNS)</td>
+<td>Service Announcement</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+							<wfw:commentRss>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Lineares Fernsehen und fantastische Podcasts</title>
+		<link>/2016/lineares-fernsehen-und-fantastische-podcasts/</link>
+				<comments>/2016/lineares-fernsehen-und-fantastische-podcasts/#respond</comments>
+				<pubDate>Tue, 01 Nov 2016 10:29:27 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Apfelfunk]]></category>
+		<category><![CDATA[Bits und so]]></category>
+		<category><![CDATA[Chaosradio]]></category>
+		<category><![CDATA[GeekTalk]]></category>
+		<category><![CDATA[GeekWeek]]></category>
+		<category><![CDATA[heise Developer]]></category>
+		<category><![CDATA[Lineares Fernsehen]]></category>
+		<category><![CDATA[Lineares Fernsehens]]></category>
+		<category><![CDATA[LTE]]></category>
+		<category><![CDATA[Nerdfunk]]></category>
+		<category><![CDATA[Netflix]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[PsychCast]]></category>
+		<category><![CDATA[Raidenger.de]]></category>
+		<category><![CDATA[Salt]]></category>
+		<category><![CDATA[SRF]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=366</guid>
+				<description><![CDATA[Das Konzept des linearen Fernsehens ist mit kleinen Kindern nicht wirklich kompatibel. Unser Kabelanschluss haben wir deshalb schon seit längerer Zeit gekündigt und durch schnörkelloses reines LTE Internet von Salt ersetzt. Konsumieren tun wir aber nach wie vor (und gefühlt auch nicht weniger) nur gezielter. Das Schweizer Fernsehen SRF produziert tolle Inhalte die jederzeit über SRF Play abgerufen werden können. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Das Konzept des linearen Fernsehens ist mit kleinen Kindern nicht wirklich kompatibel. Unser Kabelanschluss haben wir deshalb schon seit längerer Zeit gekündigt und durch schnörkelloses reines LTE Internet von <a href="https://goo.gl/B7IWSB" target="_blank">Salt</a> ersetzt.</p>
+<p><span id="more-366"></span></p>
+<p>Konsumieren tun wir aber nach wie vor (und gefühlt auch nicht weniger) nur gezielter.</p>
+<p>Das Schweizer Fernsehen SRF produziert tolle Inhalte die jederzeit über <a href="https://goo.gl/lqyPkx" target="_blank">SRF Play</a> abgerufen werden können. Auch die knapp 15 Franken pro Monat für Netflix sind für mich als Serien-Junkie sehr gut angelegt.</p>
+<p>Nicht mehr wegzudenken sind aber vor allem die zahlreichen und absolut fantastischen Podcasts die meist wöchentlich in meinem Podcatcher aufschlagen. <strong>Herzlichen Dank an alle Podcaster da draussen für eure wertvolle Arbeit. Ihr bereichert das Web ungemein!</strong></p>
+<p>Aktuell verwende ich die App <a href="https://goo.gl/A6kpO9" target="_blank">Pocket Casts</a>, die es für iOS, Android und den Webbrowser gibt. Abonnierte Podcasts und Abspielpositionen synchronisiert die App über alle Plattformen hinweg automatisch.</p>
+<p>Nachfolgend eine Auswahl mit den Podcasts die ich abonniert habe.<br />
+<span style="color: #999999;">Stand: 1. November 2016</span></p>
+<h3><img class="alignright wp-image-421" src="/wp-content/uploads/2016/11/logo_geektalk-150x150.png" alt="logo_geektalk" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_geektalk-150x150.png 150w, /wp-content/uploads/2016/11/logo_geektalk-300x300.png 300w, /wp-content/uploads/2016/11/logo_geektalk.png 400w" sizes="(max-width: 100px) 100vw, 100px" />#GeekTalk Podcast</h3>
+<p>Project #GeekTalk &#8211; www.GeekTalk.ch<br />
+<a id="podcast_popup_website" href="https://goo.gl/D5HNIE" target="_blank">geektalk.ch</a></p>
+<p class="podcast_popup_hr">#GeekTalk &#8211; der europäische Tech-Podcast</p>
+<p class="podcast_popup_hr">Geeks aus der Schweiz und Deutschland unterhalten sich über aktuelle Themen rund um Technik, Web und Gadgets. Unser Team könnt ihr auf unserem Blog einsehen www.geektalk.ch/team. Der GeekTalk ist ein Podcast Projekt vom <a href="https://twitter.com/pokipsie" target="_blank">@pokipsie</a> Network.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-420" src="/wp-content/uploads/2016/11/logo_apfelfunk-150x150.jpg" alt="logo_apfelfunk" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_apfelfunk-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_apfelfunk-300x300.jpg 300w, /wp-content/uploads/2016/11/logo_apfelfunk.jpg 400w" sizes="(max-width: 100px) 100vw, 100px" />Apfelfunk</h3>
+<p id="podcast_popup_author">Jean-Claude Frick &amp; Malte Kirchner<br />
+<a id="podcast_popup_website" href="https://goo.gl/d6bezV" target="_blank">apfelfunk.com</a></p>
+<p>Apfelfunk ist ein wöchentlicher Podcast über Apple-Themen. Jean-Claude Frick und Malte Kirchner berichten und bewerten darin die Neuigkeiten über den wichtigsten Computerkonzern der Welt.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-419" src="/wp-content/uploads/2016/11/logo_bitsundso.jpg" alt="logo_bitsundso" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_bitsundso.jpg 400w, /wp-content/uploads/2016/11/logo_bitsundso-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_bitsundso-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Bits und so</h3>
+<p id="podcast_popup_author">Undsoversum GmbH<br />
+<a id="podcast_popup_website" href="https://goo.gl/VDAIiY" target="_blank">bitsundso.de</a></p>
+<p>Die wöchentliche Talkrunde rund um Apple, Mac, iPod + iPhone, Gadgets und so. Fast live aus München.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-417" src="/wp-content/uploads/2016/11/logo_chaosradio.jpg" alt="logo_chaosradio" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_chaosradio.jpg 400w, /wp-content/uploads/2016/11/logo_chaosradio-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_chaosradio-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Chaosradio</h3>
+<p id="podcast_popup_author">Chaos Computer Club<br />
+<a id="podcast_popup_website" href="https://goo.gl/8RFHZN" target="_blank">chaosradio.ccc.de</a></p>
+<p>Chaosradio ist der unterhaltsame Live-Talk-Radio-Klassiker des Chaos Computer Clubs aus Berlin und eines der ältesten Tech-Radios überhaupt. Chaosradio informiert seit 1995 über wechselnde Themen rund um Technologie und Gesellschaft. Chaosradio sendet in der Regel am jeweils letzten Donnerstag eines Monats, an ungeraden Monaten auch auf dem Radiosender Fritz (RBB), jeweils von 22 bis 0 Uhr und lädt zur aktiven Teilnahme via Telefon und IRC ein.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-418" src="/wp-content/uploads/2016/11/logo_stadtfilter.jpg" alt="logo_stadtfilter" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_stadtfilter.jpg 400w, /wp-content/uploads/2016/11/logo_stadtfilter-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_stadtfilter-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />DigitalPodcast (Nerdfunk)</h3>
+<p id="podcast_popup_author">Radio Stadtfilter<br />
+<a id="podcast_popup_website" href="https://goo.gl/u0xjx6" target="_blank">nerdfunk.ch</a></p>
+<p>Das Digitalmagazin von Radio Stadtfilter: Immer live am Dienstagabend von 19:30 bis 20:00 Uhr auf www.stadtfilter.ch und hier als Podcast. Berichte, Reportagen, Gespräche aus der digitalen Welt. Mit Kummerbox live, der Show gegen Abstürze und Computerpannen, Tipps zur Digitalfotografie und einem Hang zu kreativen Themen.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-416" src="/wp-content/uploads/2016/11/logo_geekweek.jpg" alt="logo_geekweek" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_geekweek.jpg 400w, /wp-content/uploads/2016/11/logo_geekweek-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_geekweek-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />GeekWeek | TechPodcast</h3>
+<p id="podcast_popup_author">Tech-Podcast aus D, CH und USA. Powered by BR24.<br />
+<a id="podcast_popup_website" href="https://goo.gl/dkZkTW" target="_blank">geek-week.de</a></p>
+<p>Nothing But Tech &#8211; Aus Deutschland, der Schweiz und den USA. geek-week.de berichtet jede Woche über neue Entwicklungen aus der Online- und Tech-Welt. Geek-Week wird gemacht von Frederic Lardinois (Portland, USA), Marcus Schuler (München), Jean-Claude Frick (Bern) und Mustafa Isik (München).</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-415" src="/wp-content/uploads/2016/11/logo_heisedeveloper.jpg" alt="logo_heisedeveloper" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_heisedeveloper.jpg 400w, /wp-content/uploads/2016/11/logo_heisedeveloper-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_heisedeveloper-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />heise Developer: SoftwareArchitekTOUR-Podcast</h3>
+<p id="podcast_popup_author">heise Developer<br />
+<a id="podcast_popup_website" href="https://goo.gl/XyBblF" target="_blank">heise.de/developer</a></p>
+<p>Bekannte Softwareentwickler diskutieren über wichtige Softwarearchitekturthemen. Gehen Sie mit auf Tour und profitieren Sie von ihren Erfahrungen und Tipps.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-414" src="/wp-content/uploads/2016/11/logo_raidenger.jpg" alt="logo_raidenger" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_raidenger.jpg 400w, /wp-content/uploads/2016/11/logo_raidenger-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_raidenger-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Raidenger.de</h3>
+<p id="podcast_popup_author">Raiden<br />
+<a id="podcast_popup_website" href="https://goo.gl/X6vvHO" target="_blank">raidenger.de</a></p>
+<p>Der regelmäßige Podcast mit Themen rund um Technik, IT, Apps, Gadgets, Linux, Mac, Unix, Windows, Apps und anderen Podcasts, sowie Games, Tipps, Serien, Spielfilme, Bücher (eBooks), Tiere und Privates! In lockerer Runde wird über alles geredet was gerade so anfällt und interessant ist. Es gibt Empfehlungen zu allem Möglichen, viele Fragen und hoffentlich einige Antworten. Eben alles was Spaß, und (meistens) nicht dick macht!</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-413" src="/wp-content/uploads/2016/11/logo_psychcast.jpg" alt="logo_psychcast" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_psychcast.jpg 400w, /wp-content/uploads/2016/11/logo_psychcast-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_psychcast-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />PsychCast</h3>
+<p id="podcast_popup_author">Jan Dreher, Alexander Kugelstadt<br />
+<a id="podcast_popup_website" href="https://goo.gl/UcfQ7N" target="_blank">psychcast.de</a></p>
+<p>Der PsychCast ist eine Gesprächsreihe zu Psych-Themen und erscheint alle 14 Tage als Podcast.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/lineares-fernsehen-und-fantastische-podcasts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Tunnelblick update fails when trying to update on macOS Sierra</title>
+		<link>/2016/tunnelblick-update-fails-when-trying-to-update-to-the-latest-version-on-macossierra/</link>
+				<comments>/2016/tunnelblick-update-fails-when-trying-to-update-to-the-latest-version-on-macossierra/#respond</comments>
+				<pubDate>Wed, 28 Sep 2016 22:59:09 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[macOS]]></category>
+		<category><![CDATA[Tunnelblick]]></category>
+		<category><![CDATA[VPN]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=347</guid>
+				<description><![CDATA[Tunnelblick update fails when trying to update to the latest version on macOS Sierra. Download the update manually on tunnelblick.net.]]></description>
+								<content:encoded><![CDATA[<blockquote class="twitter-tweet" data-width="550">
+<p lang="en" dir="ltr">Tunnelblick update fails when trying to update to the latest version on <a href="https://twitter.com/hashtag/macOSSierra?src=hash">#macOSSierra</a> Download the update manually on <a href="https://t.co/ZL0JpyOMWi">https://t.co/ZL0JpyOMWi</a> <a href="https://t.co/9MB1gNs1wd">pic.twitter.com/9MB1gNs1wd</a></p>
+<p>&mdash; Oliver Gut (@flennynet) <a href="https://twitter.com/flennynet/status/781190581263470592">September 28, 2016</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/tunnelblick-update-fails-when-trying-to-update-to-the-latest-version-on-macossierra/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Nachrichten in WhatsApp zitieren</title>
+		<link>/2016/quote-messages-in-whatsapp/</link>
+				<comments>/2016/quote-messages-in-whatsapp/#respond</comments>
+				<pubDate>Tue, 06 Sep 2016 22:49:55 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[WhatsApp]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=188</guid>
+				<description><![CDATA[Um in WhatsApp einzelne Nachrichten zu zitieren, einfach lange auf die gewünschte Nachricht tippen und im aufpoppenden Menü das &#8216;Antworten&#8217;-Symbol tippen. Ideal um in Gruppen-Chats auf ältere Aussagen oder Fragen Stellung zu nehmen.]]></description>
+								<content:encoded><![CDATA[<p>Um in WhatsApp einzelne Nachrichten zu zitieren, einfach lange auf die gewünschte Nachricht tippen und im aufpoppenden Menü das &#8216;Antworten&#8217;-Symbol tippen. Ideal um in Gruppen-Chats auf ältere Aussagen oder Fragen Stellung zu nehmen.</p>
+<p><img class="alignnone size-full wp-image-116" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/quotewamessage.png" alt="quotewamessage" width="900" height="900" srcset="/wp-content/uploads/2016/08/quotewamessage.png 900w, /wp-content/uploads/2016/08/quotewamessage-150x150.png 150w, /wp-content/uploads/2016/08/quotewamessage-300x300.png 300w, /wp-content/uploads/2016/08/quotewamessage-768x768.png 768w, /wp-content/uploads/2016/08/quotewamessage-700x700.png 700w" sizes="(max-width: 900px) 100vw, 900px" /></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/quote-messages-in-whatsapp/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Fix 0xc0000605 winload.efi boot error in Windows 10</title>
+		<link>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/</link>
+				<comments>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/#respond</comments>
+				<pubDate>Sun, 21 Aug 2016 21:00:23 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Blue Screen]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows 10]]></category>
+
+		<guid isPermaLink="false">/2016/fix-windows-10-0xc000060--winload-efi-boot-error/</guid>
+				<description><![CDATA[On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore.</p>
+<p>These days I got a blue screen (surprise), telling me that a component of the operation system has expired.</p>
+<p><strong>The only way to get out of this awkward situation, was to turn back time in Bios.</strong> Windows started as expected. After upgrading Windows to the latest build, blue screen has gone.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Running pfSense on a PCEngines apu1d4</title>
+		<link>/2016/running-pfsense-on-a-pcengines-apu1d4/</link>
+				<comments>/2016/running-pfsense-on-a-pcengines-apu1d4/#respond</comments>
+				<pubDate>Mon, 01 Aug 2016 11:49:42 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Firewall]]></category>
+		<category><![CDATA[pfSense]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=359</guid>
+				<description><![CDATA[Running pfSense on a PCEngines apu1d4. Professional firewall at an affordable price.]]></description>
+								<content:encoded><![CDATA[<blockquote class="twitter-tweet" data-width="550">
+<p lang="en" dir="ltr">Running <a href="https://twitter.com/pfsense">@pfsense</a> on a <a href="https://twitter.com/hashtag/PCEngines?src=hash">#PCEngines</a> <a href="https://twitter.com/hashtag/apu1d4?src=hash">#apu1d4</a>. Professional firewall at an affordable price <a href="https://t.co/PTAhPBfVqm">https://t.co/PTAhPBfVqm</a> <a href="https://t.co/UGwmrV2EKL">pic.twitter.com/UGwmrV2EKL</a></p>
+<p>&mdash; Oliver Gut (@flennynet) <a href="https://twitter.com/flennynet/status/760005220776763392">August 1, 2016</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/running-pfsense-on-a-pcengines-apu1d4/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Vodafone NL &#8211; Europa Prepaid Daten SIM-Karte ohne zusätzliche Roaming Gebühren</title>
+		<link>/2016/europa-eu-daten-sim-karte-ohne-zusaetzliche-roaming-gebuehren/</link>
+				<comments>/2016/europa-eu-daten-sim-karte-ohne-zusaetzliche-roaming-gebuehren/#comments</comments>
+				<pubDate>Tue, 12 Jul 2016 13:58:36 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Daten]]></category>
+		<category><![CDATA[Provider]]></category>
+		<category><![CDATA[Roaming]]></category>
+		<category><![CDATA[SIM]]></category>
+		<category><![CDATA[Vodafone NL]]></category>
+
+		<guid isPermaLink="false">/2016/europa-eu-daten-sim-karte-ohne-zusaetzliche-roaming-gebuehren/</guid>
+				<description><![CDATA[Aktualisiert am 02. Februar 2019 Bezahlbare Roaming-Datenpakete sind bei allen drei grossen Schweizer Provider erhältlich Die Preise für Roaming-Datenpakete sind in den letzten Jahren bei allen drei grossen Schweizer Mobilfunkanbietern Salt, Sunrise und Swisscom bezahlbar geworden. Im Schnitt kosten Datenpakete mit 100MB 7CHF. Für 1GB bezahlt man ungefähr 20CHF, 5GB ca. 60CHF. Die Pakete sind in [&#8230;]]]></description>
+								<content:encoded><![CDATA[<h6><span style="color: #ff6600;">Aktualisiert am 02. Februar 2019</span></h6>
+<h3>Bezahlbare Roaming-Datenpakete sind bei allen drei grossen Schweizer Provider erhältlich</h3>
+<p>Die Preise für Roaming-Datenpakete sind in den letzten Jahren bei allen drei grossen Schweizer Mobilfunkanbietern Salt, Sunrise und Swisscom bezahlbar geworden. Im Schnitt kosten Datenpakete mit 100MB 7CHF. Für 1GB bezahlt man ungefähr 20CHF, 5GB ca. 60CHF. Die Pakete sind in der Regel 30 Tage ab Aktivierung gültig. <del>Einzig Salt verfolgt eine andere Strategie und findet eine fixe Laufzeit bis jeweils zum 9. des Monats eine gute Idee. Wer also bspw. vom 8. bis 10. eines Monats im Ausland weilt, bezahlt die Option gleich zweimal.</del></p>
+<h3>Übersicht Roaming-Datenpakete der verschiedenen Provider</h3>
+<p><a href="https://goo.gl/w7S5o5" target="_blank" rel="noopener noreferrer">Salt &#8211; Roaming Datenpakete<br />
+</a><a href="https://goo.gl/YLzeg2" target="_blank" rel="noopener noreferrer">Sunrise &#8211; Travel Data<br />
+</a><a href="https://goo.gl/gTQUnK" target="_blank" rel="noopener noreferrer">Swisscom &#8211; Data Travel</a></p>
+<h3>Roaming-Datenpakete vs. Prepaid SIM-Karte im Zielland</h3>
+<p>Bei einer gemässigten Datennutzung sind die Datenpaket-Preise völlig in Ordnung. Wenn man sein Gerät im Griff hat und Bescheid weiss, wie man den Datenhunger des Smartphones bändigen kann, kommt man mit erstaunlich wenigen MB zurecht. Möchte man sein Nutzungsverhalten im Ausland jedoch nicht gross anpassen, kann es sehr schnell sehr kostspielig werden. Sich im Ausland eine Prepaid SIM Karte zu beschaffen, ist in den meisten Fällen nicht ganz einfach. Oft wird ein Wohnsitz im entsprechenden Land vorausgesetzt oder die fehlenden Sprachkenntnisse stehen einem im Weg. Zudem kostet es Zeit, sich in jedem neuen Land wieder mit den lokalen Anbietern und deren Angeboten auseinanderzusetzen.</p>
+<h3>Die Europa Prepaid SIM-Karte &#8211; Ein guter Kompromiss</h3>
+<p>Einen Kompromiss zwischen den teuren Roaming Datenpaketen der Schweizer Mobilfunkanbieter und dem aufwändigen Beschaffen einer Prepaid SIM Karte im Zielland, könnten die Europa SIM Karten Angebote sein. Diese zeichnen sich dadurch aus, dass gebuchte Pakete nicht nur im Land gelten, an dem die SIM-Karte ausgestellt wurde, sondern auch im ganzen EU Raum und der Schweiz.</p>
+<p>Auf Twitter habe ich kürzlich folgenden Tweet gesehen und mir dann in einer Kurzschlussreaktion eine Vodafone NL Prepaid SIM-Karte für umgerechnet ca. 8CHF auf eBay geklickt.</p>
+<blockquote class="twitter-tweet" data-width="550" data-dnt="true">
+<p lang="de" dir="ltr">Diese SIM Karte löst offenbar gleich mehrere Probleme für CH Touristen: Roaming EU/CH + Tethering + LTE + zahlbar <a href="https://t.co/MiDlSmijeG">https://t.co/MiDlSmijeG</a></p>
+<p>&mdash; Michael Stucki (@stucki) <a href="https://twitter.com/stucki/status/739447922996187136?ref_src=twsrc%5Etfw">June 5, 2016</a></p></blockquote>
+<p><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+<p>Ich habe mich nicht sehr intensiv mit dem Thema der Europa SIM-Karten auseinandergesetzt. Gut möglich, dass es bessere Angebote gibt. Das konkrete Angebot ist aktuell leider nicht mehr verfügbar. Mit dem Suchbegriff <em>Vodafone NL Prepaid</em> lassen sich auf <a href="https://www.ebay.com/" target="_blank" rel="noopener noreferrer">eBay</a> <i class="fa fa-external-link"></i> jedoch ähnlich günstige Angebote finden. Die SIM-Karte landete innerhalb 3 Arbeitstagen ohne weitere Kosten in meinem Briefkasten.</p>
+<h3>Eckdaten des Vodafone NL Prepaid Angebots</h3>
+<p>Folgende Datenpakete können <a href="https://www.vodafone.nl/my/prepaid/bundels/" target="_blank" rel="noopener">gebucht</a> werden.</p>
+<h3><span style="color: #339966;"><strong>2GB für 10€</strong></span><br />
+<span style="color: #ff9900;"><strong>4GB für 15€</strong></span><br />
+<span style="color: #800080;"><strong>6GB für 20€<br />
+<span style="color: #000000;">10GB für 30€</span><br />
+</strong></span></h3>
+<p>Die Datenpakete sind in den meisten Ländern in Europa gültig (EU + Island, Liechtenstein, Norwegen, Schweiz). Eine komplette Übersicht befindet sich <a href="https://goo.gl/b60vpN" target="_blank" rel="noopener noreferrer">hier</a>.</p>
+<h3>Vodafone NL Prepaid SIM-Karte registrieren und Konto erstellen</h3>
+<p>Um die SIM-Karte zu registrieren ist lediglich Vor-/Nachname und eine E-Mail Adresse notwendig. Soweit ich gesehen habe, ist die Seite leider nur in Holländisch verfügbar. Mit ein bisschen <a href="https://translate.google.com/" target="_blank" rel="noopener noreferrer">Google Translate</a> <i class="fa fa-external-link"></i> kommt man jedoch erstaunlich gut zurecht.</p>
+<p><img class="alignnone size-full wp-image-106" src="/wp-content/uploads/2016/08/roaming_createAccount.png" alt="Vodafone NL - Account erstellen" width="2403" height="951" srcset="/wp-content/uploads/2016/08/roaming_createAccount.png 2403w, /wp-content/uploads/2016/08/roaming_createAccount-300x119.png 300w, /wp-content/uploads/2016/08/roaming_createAccount-768x304.png 768w, /wp-content/uploads/2016/08/roaming_createAccount-1024x405.png 1024w, /wp-content/uploads/2016/08/roaming_createAccount-700x277.png 700w" sizes="(max-width: 2403px) 100vw, 2403px" /></p>
+<p>Telefonnummer eingeben, SMS-Code bestätigen und Konto eröffnen. Anschliessend wird eine E-Mail an die von euch angegebene Adresse versendet. Link klicken, fertig.</p>
+<h3>Guthaben mit Kreditkarte aufladen</h3>
+<p>Über den Menüpunkt <em>Eenmalig Opwaarderen</em> kann mit einer Schweizer Kreditkarte Guthaben aufgeladen werden.</p>
+<p><img class="alignnone size-full wp-image-107" src="/wp-content/uploads/2016/08/roaming_loadMoney.png" alt="Vodafone NL - Guthaben aufladen" width="2380" height="854" srcset="/wp-content/uploads/2016/08/roaming_loadMoney.png 2380w, /wp-content/uploads/2016/08/roaming_loadMoney-300x108.png 300w, /wp-content/uploads/2016/08/roaming_loadMoney-768x276.png 768w, /wp-content/uploads/2016/08/roaming_loadMoney-1024x367.png 1024w, /wp-content/uploads/2016/08/roaming_loadMoney-700x251.png 700w" sizes="(max-width: 2380px) 100vw, 2380px" /></p>
+<p>Erste Tests waren sehr vielversprechend. Eine Langzeiterfahrung kann ich leider noch keine abgeben (werde ich hier natürlich ergänzen). Das aufgeladene Guthaben soll 1 Jahr lang gültig sein. Inwiefern die SIM-Karte bei Nichtbenutzung allenfalls deaktiviert wird, kann ich leider nicht sagen. Lasst es mich wissen, wenn ihr bereits Erfahrungen mit diesem oder ähnlichen Angeboten gemacht habt.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/europa-eu-daten-sim-karte-ohne-zusaetzliche-roaming-gebuehren/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Fix WSUS &#8216;unexpected error&#8217; in MMC after installing Windows updates (KB3148812/KB3159706)</title>
+		<link>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/</link>
+				<comments>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/#respond</comments>
+				<pubDate>Mon, 04 Jul 2016 15:59:12 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<category><![CDATA[Windows Updates]]></category>
+		<category><![CDATA[WSUS]]></category>
+
+		<guid isPermaLink="false">/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates/</guid>
+				<description><![CDATA[Update 4/7/2016: Same issue with KB3159706. After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to this article Windows update KB3148812, which recently was released, [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong><span style="color: #ff0000;">Update 4/7/2016: Same issue with KB3159706.</span></strong></p>
+<p>After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to <a href="http://blogs.technet.com/b/wsus/archive/2016/04/20/known-issues-with-kb3148812.aspx" target="_blank">this</a> <i class="fa fa-external-link"></i> article Windows update KB3148812, which recently was released, broke Windows Server Update Services (WSUS). Uninstalling this specific update and rebooting the server fixed the problem.</p>
+<p><img class="alignnone size-full wp-image-115" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/wsus-remove-update.png" alt="remove windows update" width="849" height="412" srcset="/wp-content/uploads/2016/08/wsus-remove-update.png 849w, /wp-content/uploads/2016/08/wsus-remove-update-300x146.png 300w, /wp-content/uploads/2016/08/wsus-remove-update-768x373.png 768w, /wp-content/uploads/2016/08/wsus-remove-update-700x340.png 700w" sizes="(max-width: 849px) 100vw, 849px" /></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Cropped Remote Desktop fullscreen mode in macOS</title>
+		<link>/2016/cropped-remote-desktop-rdp-fullscreen-mode-in-mac-os-x/</link>
+				<comments>/2016/cropped-remote-desktop-rdp-fullscreen-mode-in-mac-os-x/#respond</comments>
+				<pubDate>Mon, 02 May 2016 20:33:06 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Tech]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[Remote Desktop]]></category>
+
+		<guid isPermaLink="false">/2016/cropped-remote-desktop-rdp-fullscreen-mode-in-mac-os-x/</guid>
+				<description><![CDATA[When adding a new Remote Desktop connection using the official Microsoft Mac App Store Remote Desktop app on my MacBook, the default value for full screen mode is to use all available monitors. This results in a few pixels missing on top of the screen. Disabling this option will fix this issue.]]></description>
+								<content:encoded><![CDATA[<p>When adding a new Remote Desktop connection using the official Microsoft Mac App Store <a href="https://itunes.apple.com/en/app/microsoft-remote-desktop/id715768417?mt=12" target="_blank">Remote Desktop</a> <i class="fa fa-external-link"></i> app on my MacBook, the default value for full screen mode is to use all available monitors. This results in a few pixels missing on top of the screen. Disabling this option will fix this issue.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/cropped-remote-desktop-rdp-fullscreen-mode-in-mac-os-x/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Secure your website by adding some HTTP security headers with NGINX</title>
+		<link>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</link>
+				<comments>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/#respond</comments>
+				<pubDate>Tue, 15 Mar 2016 15:33:21 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[HTTP header]]></category>
+		<category><![CDATA[NGINX]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[SSL]]></category>
+
+		<guid isPermaLink="false">/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</guid>
+				<description><![CDATA[In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit Scott Helme’s blog . He did [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="size-full wp-image-109 alignright" src="/wp-content/uploads/2016/08/secure-http-headers.png" alt="secure-http-headers" width="190em" srcset="/wp-content/uploads/2016/08/secure-http-headers.png 600w, /wp-content/uploads/2016/08/secure-http-headers-150x150.png 150w, /wp-content/uploads/2016/08/secure-http-headers-300x300.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit <a href="https://scotthelme.co.uk/" target="_blank" rel="noopener">Scott Helme’s blog</a> <i class="fa fa-external-link"></i>. He did a pretty good job explaining all different types of HTTP security headers.</p>
+<h3>X-Frame-Options</h3>
+<p><code>X-Frame-Options</code> specifies whether your browser allows framing your site into another site. You can <code>DENY</code>, allow only from <code>SAMEORIGIN</code> or <code>ALLOW-FROM https://a.specific.site.com/</code></p>
+<pre><code class="language-nginx">add_header X-Frame-Options SAMEORIGIN;
+</code></pre>
+<h3>X-Content-Type-Options</h3>
+<p>With <code>nosniff</code> your browser is enforced to use the content-type declared by your server. It helps reducing the risk of so-called drive-by downloads.</p>
+<pre><code class="language-nginx">add_header X-Content-Type-Options nosniff;
+</code></pre>
+<h3>X-XSS-Protection</h3>
+<p><code>X-XSS-Protection</code> enables Cross-site scripting (XSS) filter built-in into most browsers. Although this option is enabled by default, it’s recommend to re-enable and hence reduce the risk in which malicious scripts are injected to your site.</p>
+<pre><code class="language-nginx">add_header X-XSS-Protection "1; mode=block";
+</code></pre>
+<h3>Content-Security-Policy</h3>
+<p><code>Content-Security-Policy</code> defines approved sources your browser may load content from.</p>
+<pre><code class="language-nginx">add_header Content-Security-Policy "default-src https:
+    data: 'unsafe-inline' 'unsafe-eval';" always;
+</code></pre>
+<h3>Strict-Transport-Security</h3>
+<p><code>Strict-Transport-Security</code> enforces your browser to use HTTPS over regular HTTP. Use HTTPS over HTTP everywhere and anytime. Even if it’s a simple personal blog. You can get a free SSL certificate at <a href="https://www.startssl.com/" target="_blank" rel="noopener">StartCom</a> <i class="fa fa-external-link"></i>. Not long ago, Google also started favoring HTTPS sites in search results.</p>
+<pre><code class="language-nginx">add_header Strict-Transport-Security "max-age=31536000;
+    includeSubdomains" always;
+</code></pre>
+<h3>Public-Key-Pins (HPKP)</h3>
+<p>With <code>Public-Key-Pins</code> you are able to tell your browser in which identities he should trust. It protects your site from man-in-the-middle (MitM) attacks and in case if your certificate authority is compromised. The easiest way to get your appropriate key-pins is by running a test at <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener">SSL LABS</a> <i class="fa fa-external-link"></i>. The pins are part of the result.</p>
+<pre><code class="language-nginx">add_header Public-Key-Pins 'pin-sha256="xxx"; pin-sha256="yyy";
+   pin-sha256="zzz"; max-age=2592000; includeSubDomains' always;</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Fix error &#8216;index.php was not found on this server&#8217; after upgrading ownCloud to version 9</title>
+		<link>/2016/owncloud-9-fix-error-index-php-was-not-found/</link>
+				<comments>/2016/owncloud-9-fix-error-index-php-was-not-found/#respond</comments>
+				<pubDate>Wed, 09 Mar 2016 22:05:00 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[ownCloud]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">/2016/owncloud-9-fix-error-index-php-was-not-found/</guid>
+				<description><![CDATA[If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using apt-get dist upgrade), you probably get the error message shown above. Adding /index.php manually still redirects to the ownCloud login screen. As mentioned here open .htaccess in /var/www/owncloud an comment out the line RewriteRule .* index.php [PT,E=PATH_INFO:$1] and restart apache with service apache2 restart]]></description>
+								<content:encoded><![CDATA[<p>If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using <code>apt-get dist upgrade</code>), you probably get the error message shown above. Adding <code>/index.php</code> manually still redirects to the ownCloud login screen.</p>
+<p>As mentioned <a href="https://github.com/owncloud/core/issues/22970">here</a> open <code>.htaccess</code> in <code>/var/www/owncloud</code> an comment out<br />
+the line</p>
+<pre><code>RewriteRule .* index.php [PT,E=PATH_INFO:$1]</code></pre>
+<p>and restart apache with</p>
+<pre><code>service apache2 restart</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/owncloud-9-fix-error-index-php-was-not-found/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Redirect HTTP to HTTPS with URL rewrite module in IIS</title>
+		<link>/2016/http-to-https-with-url-rewrite-module-in-iis/</link>
+				<comments>/2016/http-to-https-with-url-rewrite-module-in-iis/#respond</comments>
+				<pubDate>Thu, 18 Feb 2016 15:04:50 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[SSL]]></category>
+		<category><![CDATA[Windows Server]]></category>
+
+		<guid isPermaLink="false">/2016/http-to-https-with-url-rewrite-module-in-iis/</guid>
+				<description><![CDATA[First download Microsoft’s Web Platform Installer 5.0. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>First download <a href="http://go.microsoft.com/fwlink/?LinkId=255386">Microsoft’s Web Platform Installer 5.0</a>. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below.</p>
+<p><img class="alignnone size-full wp-image-102" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module.png" alt="IIS URL Rewrite module" width="775" height="176" srcset="/wp-content/uploads/2016/08/iis-rewrite-module.png 775w, /wp-content/uploads/2016/08/iis-rewrite-module-300x68.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-768x174.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-700x159.png 700w" sizes="(max-width: 775px) 100vw, 775px" /></p>
+<p>Create a new blank rule with the following adjustments (leave default values):</p>
+<ul>
+<li><strong>Title</strong>: e.g. &#8216;Redirect to HTTPS&#8217;</li>
+<li><strong>Match URL</strong>: Request URL matches the pattern using regular expressions. Pattern: <code>(.*)</code></li>
+<li><strong>Conditions</strong>: Add new. Condition input <code>{HTTPS}</code>, pattern <code>^OFF$</code></li>
+<li><strong>Action</strong>: Action type Redirect, Redirect URL <code>https://{HTTP_HOST}/{R:1}</code> redirect type 303</li>
+</ul>
+<p>Apply and go back to rules overview.</p>
+<p><img class="alignnone size-full wp-image-101" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module-001.png" alt="IIS URL Rewrite module" width="869" height="78" srcset="/wp-content/uploads/2016/08/iis-rewrite-module-001.png 869w, /wp-content/uploads/2016/08/iis-rewrite-module-001-300x27.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-001-768x69.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-001-700x63.png 700w" sizes="(max-width: 869px) 100vw, 869px" /></p>
+<p><strong>Don’t forget to clear &#8216;Require SSL&#8217; checkbox in SSL settings in order to make the redirect working properly.</strong></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/http-to-https-with-url-rewrite-module-in-iis/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Toggle WPF control visibility with DataTriggers</title>
+		<link>/2016/toggle-wpf-control-visibility-with-datatriggers/</link>
+				<comments>/2016/toggle-wpf-control-visibility-with-datatriggers/#respond</comments>
+				<pubDate>Wed, 17 Feb 2016 19:24:49 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[WPF]]></category>
+		<category><![CDATA[XAML]]></category>
+
+		<guid isPermaLink="false">/2016/toggle-wpf-control-visibility-with-datatriggers/</guid>
+				<description><![CDATA[A frequent source of error while working with triggers is that I set the default value directly on the control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won’t work. The default value has to be set in the control’s style as shown in the example below. &#60;Window x:Class="FlennyNET.Examples.DataTrigger.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>A frequent source of error while working with triggers is that I set the default value directly on the control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won’t work. <strong>The default value has to be set in the control’s style</strong> as shown in the example below.</p>
+<pre><code>&lt;Window x:Class="FlennyNET.Examples.DataTrigger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataTrigger Example" Height="350" Width="525"&gt;
+    &lt;Grid&gt;
+        &lt;StackPanel Orientation="Horizontal"&gt;
+            &lt;Label Content="DataTrigger Example"&gt;
+                &lt;Label.Style &gt;
+                    &lt;Style TargetType="Label"&gt;
+                        &lt;Setter Property="Visibility" Value="Hidden" /&gt;
+                        &lt;Style.Triggers&gt;
+                            &lt;DataTrigger Binding="{Binding HasValue}" Value="true"&gt;
+                                &lt;Setter Property="Visibility" Value="Visible" /&gt;
+                            &lt;/DataTrigger&gt;
+                        &lt;/Style.Triggers&gt;
+                    &lt;/Style&gt;
+                &lt;/Label.Style&gt;
+            &lt;/Label&gt;
+        &lt;/StackPanel&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/toggle-wpf-control-visibility-with-datatriggers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Redirect any subdomain http or https to a single subdomain with NGINX</title>
+		<link>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/</link>
+				<comments>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/#respond</comments>
+				<pubDate>Wed, 03 Feb 2016 20:37:18 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[NGINX]]></category>
+		<category><![CDATA[SSL]]></category>
+
+		<guid isPermaLink="false">/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/</guid>
+				<description><![CDATA[Today I had a use case where I wanted to redirect any subdomain at any scheme (http or https) to a single https subdomain ./ http://blog.flenny.net/ should redirect to / https://www.flenny.net/ should redirect to / In order to redirect both schemes (http and https) to a single subdomain you have to setup two server blocks. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-149" src="http://wordpress.flenny.net/wp-content/uploads/2016/01/nginx.png" alt="NGINX" width="300" height="69" /></p>
+<p>Today I had a use case where I wanted to redirect any subdomain at any scheme (http or https) to a single https subdomain <a href="/">/</a>.</p>
+<p><a href="http://blog.flenny.net/">http://blog.flenny.net/</a> should redirect to <a href="/">/</a><br />
+<a href="https://www.flenny.net/">https://www.flenny.net/</a> should redirect to <a href="/">/</a></p>
+<p>In order to redirect both schemes (http and https) to a single subdomain you have to setup two <code>server</code> blocks. The first one catches all the traffic to any scheme (<code>listen 80; listen 443</code>) at any subdomain (<code>*.flenny.net</code>). The second one listens only on port <code>443</code> and the specific subdomain <code>ping.flenny.net</code>.</p>
+<pre><code class="language-nginx">	server {
+		listen 80;
+		listen 443 ssl;
+		server_name *.flenny.net;
+		return 301 $request_uri;/
+	}
+	
+	server {
+		listen 443 default ssl;
+		server_name ping.flenny.net;
+		
+		root /var/www/flenny;
+		index index.html index.htm;
+	
+		ssl on;
+		ssl_certificate			path/to/ssl.crt;
+		ssl_certificate_key		path/to/ssl.key;
+				
+		location / {
+			proxy_pass https://x.y.z;/
+		}
+	}
+</code></pre>
+<p>For a specific port you can only have one ssl configuration section (<code>ssl_certificate</code>, <code>ssl_certificate_key</code>). As shown in the example above use the keyword <code>default</code> to flag the appropriate <code>server</code> block.</p>
+<p><strong>Important:</strong> In order to properly redirect e.g. <a href="https://blog.flenny.net/">https://blog.flenny.net/</a> to <a href="/">/</a> you must have a valid ssl certificate for both subdomains.</p>
+<p>A full example of a working NGINX configuration you can get <a href="https://gist.github.com/flenny/de4b6ab465ed5b1c6886" target="_blank">here</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Disable SSH connections over IPv6</title>
+		<link>/2016/disable-ssh-connections-over-ipv6/</link>
+				<comments>/2016/disable-ssh-connections-over-ipv6/#respond</comments>
+				<pubDate>Sun, 31 Jan 2016 23:31:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IPv6]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/disable-ssh-connections-over-ipv6/</guid>
+				<description><![CDATA[If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&#160;versions. In order to restrict access to protocol version 4 you have to comment in the line #ListenAddress 0.0.0.0 in your /etc/ssh/sshd_config. #ListenAddress :: ListenAddress 0.0.0.0 Restart SSH service for the changes to take effect. sudo service [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&nbsp;versions. In order to restrict access to protocol version 4 you have to comment in the line<br />
+<code>#ListenAddress 0.0.0.0</code> in your <code>/etc/ssh/sshd_config</code>.</p>
+<pre><code class="language-vim">#ListenAddress ::
+ListenAddress 0.0.0.0
+</code></pre>
+<p>Restart SSH service for the changes to take effect.</p>
+<pre><code class="language-bash">sudo service sshd restart
+</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/disable-ssh-connections-over-ipv6/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>SSH into a Proxmox LXC container</title>
+		<link>/2016/ssh-into-a-proxmox-lxc-container/</link>
+				<comments>/2016/ssh-into-a-proxmox-lxc-container/#respond</comments>
+				<pubDate>Tue, 26 Jan 2016 17:46:46 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/ssh-into-a-proxmox-lxc-container/</guid>
+				<description><![CDATA[By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container. Option #1: Attach to the container through Proxmox [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-151" src="http://wordpress.flenny.net/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" width="300" height="45" /></p>
+<p>By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.</p>
+<h2 id="option-1-attach-to-the-container-through-proxmox-host:5afcdfa0a16694e52c79ef330542c0e9">Option #1: Attach to the container through Proxmox host</h2>
+<p>Login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>The name of the container corresponds to the unique VM ID which you can see in the container’s description.</p>
+<p><img class="alignnone size-full wp-image-110" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-001.png" alt="ssh-into-container-001" width="686" height="62" srcset="/wp-content/uploads/2016/08/ssh-into-container-001.png 686w, /wp-content/uploads/2016/08/ssh-into-container-001-300x27.png 300w" sizes="(max-width: 686px) 100vw, 686px" /></p>
+<p><img class="alignnone size-full wp-image-112" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container.png" alt="ssh-into-container" width="661" height="237" srcset="/wp-content/uploads/2016/08/ssh-into-container.png 661w, /wp-content/uploads/2016/08/ssh-into-container-300x108.png 300w" sizes="(max-width: 661px) 100vw, 661px" /></p>
+<h2 id="option-2-allow-login-with-password-on-the-specific-container:5afcdfa0a16694e52c79ef330542c0e9">Option #2: Allow login with password on the specific container</h2>
+<p>By default a Proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>Open <code>sshd_config</code></p>
+<pre><code class="language-bash">nano /etc/ssh/sshd_config
+</code></pre>
+<p>and change the line <code>PermitRootLogin without-password</code> to <code>PermitRootLogin yes</code>. Exit nano with <code>Ctrl+X</code> and save changes with <code>y</code> and <code>ENTER</code>.</p>
+<p><img class="alignnone size-full wp-image-111" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-002.png" alt="ssh-into-container-002" width="656" height="288" srcset="/wp-content/uploads/2016/08/ssh-into-container-002.png 656w, /wp-content/uploads/2016/08/ssh-into-container-002-300x132.png 300w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p>Restart ssh service for the changes to take effect.</p>
+<pre><code class="language-bash">service ssh restart
+</code></pre>
+<p>Try to establish a direct SSH connection to your container’s IP (If you don’t know the container’s IP run <code>ifconfig</code>).</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/ssh-into-a-proxmox-lxc-container/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to update Proxmox LXC container templates</title>
+		<link>/2016/how-to-update-proxmox-lxc-container-templates/</link>
+				<comments>/2016/how-to-update-proxmox-lxc-container-templates/#respond</comments>
+				<pubDate>Thu, 21 Jan 2016 19:04:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[Templates]]></category>
+
+		<guid isPermaLink="false">/2016/how-to-update-proxmox-lxc-container-templates/</guid>
+				<description><![CDATA[By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following commandon your host’s console. pveam update You will find the templates right on your local storage &#62; content &#62; templates.]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" class="wp-image-151"/></figure>
+
+
+<p>By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).<br />In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following command<br />on your host’s console.</p>
+<pre><code class="language-bash">pveam update
+</code></pre>
+<p>You will find the templates right on your local storage &gt; content &gt; templates.</p>
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/08/pve-lxc-update.png" alt="" class="wp-image-104" srcset="/wp-content/uploads/2016/08/pve-lxc-update.png 651w, /wp-content/uploads/2016/08/pve-lxc-update-300x153.png 300w" sizes="(max-width: 651px) 100vw, 651px" /></figure>
+]]></content:encoded>
+							<wfw:commentRss>/2016/how-to-update-proxmox-lxc-container-templates/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Clientseitige asynchrone Serviceaufrufe mit der ChannelFactory</title>
+		<link>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/</link>
+				<comments>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/#comments</comments>
+				<pubDate>Sat, 11 Feb 2012 23:50:12 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[async]]></category>
+		<category><![CDATA[AsyncCallback]]></category>
+		<category><![CDATA[asynchronous operations]]></category>
+		<category><![CDATA[ChannelFactory]]></category>
+		<category><![CDATA[IAsyncResult]]></category>
+		<category><![CDATA[svcutil]]></category>
+		<category><![CDATA[WCF]]></category>
+
+		<guid isPermaLink="false">http://flenny.wordpress.com/?p=37</guid>
+				<description><![CDATA[Wenn eine WPF Applikation entfernte Methoden ausführen will (Interprozesskommunikation), sollten diese wenn immer möglich asynchron ausgeführt werden. Wir müssen immer davon ausgehen, dass auch scheinbar kurze Funktionen für einmal auch mal länger dauern können. Zudem werden die Aufrufe in einer WPF Applikation standardmässig im UI Thread ausgeführt. Das  führt dazu, dass die Benutzeroberfläche in der [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Wenn eine WPF Applikation entfernte Methoden ausführen will (Interprozesskommunikation), sollten diese wenn immer möglich asynchron ausgeführt werden. Wir müssen immer davon ausgehen, dass auch scheinbar kurze Funktionen für einmal auch mal länger dauern können. Zudem werden die Aufrufe in einer WPF Applikation standardmässig im UI Thread ausgeführt. Das  führt dazu, dass die Benutzeroberfläche in der Zwischenzeit für den Benutzer einfrieren kann (&#8216;Keine Rückmeldung&#8217; wird in der Titelleiste angezeigt.)</p>
+<p>Mit der WCF gibt es verschiedene Möglichkeiten die Aufrufe asynchron umzusetzen.</p>
+<ul>
+<li>Mit dem generierten Client-Proxy via svcutil mit dem Parameter <code>/async</code><br />
+Bspw: <code>svcutil *.wsdl *xsd /l:c# /out: FlennyNET.LearingWCF.ClientProxy.cs /async</code></li>
+<li>Über die Funktion <em>Add Service Reference</em> in den erweiterten Einstellungen das Kontrollkästchen <em>generate asynchronous operations</em> anwählen.</li>
+<li>Oder die Funktion serverseitig mit dem AsyncPattern implementieren.</li>
+</ul>
+<p>Ich konnte mit den automatisch generierten Proxies noch nie etwas anfangen, weshalb ich in meinen Projekten oft die ChannelFactory einsetze. Sämtliche Service- und Datenverträge lagere ich in eine zusätzliche Assembly aus, so dass Client und auch Server darauf zugreifen können. Die ChannelFactory bietet mir aber leider keine asynchrone Methoden der Schnittstelle an. Die Asynchronizität kann nur erreicht werden, wenn für jeden Aufruf künstlich einen Thread hergestellt wird.</p>
+<p>Ich bin ein fauler Programmierer und möchte mich weder auf der Server- noch auf der Clientseite um irgendwelche Arbeiten, die mir schlussendlich einen simplen asynchronen Methodenaufruf bereitstellen, kümmern müssen. Das sollte doch eigentlich die Aufgabe von der WCF sein!</p>
+<p>Die Lösung/ Workaround funktioniert nun wie folgt:</p>
+<p>Ich erstelle wie gewohnt ein ServiceContract</p>
+<pre><code>[ServiceContract(Name = "DemoContract", Namespace = "/")]
+ public interface IfleDemoContract
+ {
+     [OperationContract]
+     CfleDemoData GetData();
+ }</code></pre>
+<p>Dabei ist hier bereits wichtig zu beachten, dass für das WSDL einen expliziten Namen angegeben werden muss (bspw. &#8216;DemoContract&#8217;). Auf der Seite des Servers implementieren wir nun dieses Interface normal synchron. Mit dem System.Threading.Thread.Sleep() erzeugen wir eine künstliche Verzögerung.</p>
+<pre><code>public class CfleDemoContract : IfleDemoContract
+ {
+     public CfleDemoData GetData()
+     {
+         System.Threading.Thread.Sleep(5000);
+
+         return new CfleDemoData {
+             Id = 0,
+             Content = "Daten vom Server!" };
+     }
+ }</code></pre>
+<p>Wenn wir nun auf Seite des Clients einen neuen Proxy mit der ChannelFactory erzeugen, steht uns nur die synchrone Variante zur Verfügung.</p>
+<p><a href="http://wordpress.flenny.net/wp-content/uploads/2012/02/sync1-1.png"><img class="alignnone size-full wp-image-233" src="http://wordpress.flenny.net/wp-content/uploads/2012/02/sync1-1.png" alt="sync1" width="500" height="130" srcset="/wp-content/uploads/2012/02/sync1-1.png 500w, /wp-content/uploads/2012/02/sync1-1-300x78.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Damit wir nun auf Seite des Clients die asynchronen Methoden vom WCF Framework zur Verfügung gestellt bekommen, erstellen wir ein zweites Interface, welches die zusätzlichen Methoden für die asynchrone Ausführung gemäss dem AsyncPattern zur Verfügung stellt. Auch hier ist die explizite Namesvergabe für das Interface wieder speziell zu berücksichtigen. Die Namen der beiden Interfaces müssen identisch sein.</p>
+<pre><code>[ServiceContract(Name = "DemoContract", Namespace = "/")]
+ public interface IfleDemoContractAsync
+ {
+     [OperationContract(AsyncPattern = true)]
+     IAsyncResult BeginGetData(AsyncCallback callback, object asyncState);
+     CfleDemoData EndGetData(IAsyncResult result);
+ }</code></pre>
+<p>Der Proxy wird dann wie folgt erstellt.</p>
+<pre><code>IfleDemoContractAsync objProxy = ChannelFactory.
+     CreateChannel(new NetTcpBinding(),
+         new EndpointAddress("net.tcp://localhost:9876/flennyNET"));</code></pre>
+<p>Danach stehen die asynchronen Methoden zur Verfügung.</p>
+<p><a href="http://wordpress.flenny.net/wp-content/uploads/2012/02/async-1.png"><img class="alignnone size-full wp-image-232" src="http://wordpress.flenny.net/wp-content/uploads/2012/02/async-1.png" alt="async" width="500" height="128" srcset="/wp-content/uploads/2012/02/async-1.png 500w, /wp-content/uploads/2012/02/async-1-300x77.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Der clientseitige notwendige Thread wird nun vom WCF Framework automatisch erstellt.</p>
+<p>Mit diesem Vorgehen erreichen wir, dass wir serverseitig normal synchron programmieren können und clientseitig die ChannelFactory verwenden können und uns aber nicht um die Erstellung von Threads kümmern müssen.</p>
+<p>Ich hab euch auch hier wieder ein Visual Studio 2010 Demo Projekt erstellt, welches ihr <a href="https://skydrive.live.com/redir.aspx?cid=5a3e2471c6df7b9c&amp;resid=5A3E2471C6DF7B9C!290&amp;parid=5A3E2471C6DF7B9C!287&amp;authkey=!ACx1H-AyEFra5oU" target="_blank">hier</a> herunterladen könnt. Viel Spass!</p>
+]]></content:encoded>
+							<wfw:commentRss>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+		<item>
+		<title>Typ object mit der WCF übermitteln</title>
+		<link>/2012/typ-object-mit-der-wcf-ubermitteln/</link>
+				<comments>/2012/typ-object-mit-der-wcf-ubermitteln/#respond</comments>
+				<pubDate>Sat, 04 Feb 2012 00:00:28 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[.NET Framework 4.0]]></category>
+		<category><![CDATA[ChannelFactory]]></category>
+		<category><![CDATA[DataContract]]></category>
+		<category><![CDATA[DataMember]]></category>
+		<category><![CDATA[object]]></category>
+		<category><![CDATA[WCF]]></category>
+
+		<guid isPermaLink="false">http://flenny.wordpress.com/?p=13</guid>
+				<description><![CDATA[Manchmal kann es sinnvoll sein, die Schnittstelle eines Services möglichst generisch zu halten und deshalb als Datentyp object zu definieren. Die Übermittlung des Typs object ist in der WCF aber nicht unproblematisch. Es gilt dabei zu beachten, dass der Absender wie auch der Empfänger in diesem Fall .NET einsetzen müssen und beide die gleichen Typendefinitionen [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Manchmal kann es sinnvoll sein, die Schnittstelle eines Services möglichst generisch zu halten und deshalb als Datentyp object zu definieren. Die Übermittlung des Typs object ist in der WCF aber nicht unproblematisch. Es gilt dabei zu beachten, dass der Absender wie auch der Empfänger in diesem Fall .NET einsetzen müssen und beide die gleichen Typendefinitionen und Versionen referenzieren.</p>
+<p><strong>Die Idee</strong>: Der Absender serialisiert vor dem Versenden ein beliebiges Objekt in ein <code>byte[]</code>. Das Array wird anschliessend übertragen und auf der Gegenseite wieder in object umgewandelt. So lassen sich beliebige Daten übertragen so lange diese serialisierbar sind. Der Vorteil der unten stehenden Lösung besteht nun darin, dass während der Entwicklung normal gegen object programmiert werden kann. Die Umwandlung in ein <code>byte[]</code> für die Übertragung geschieht durch die Implementierung der <code>[OnSerializing]</code> und <code>[OnDeserialized]</code> Methoden automatisch.</p>
+<pre><code>
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+namespace FlennyNET.LearningWCF.DataContract
+{
+    [Serializable]
+    [DataContract(Name = "DemoDataContainer",
+        Namespace = "http://flenny.wordpress.com/2012/02/03/typ-object-in-der-wcf/",
+        IsReference = true)]
+    public class CfleDemoDataContainer
+    {
+        [DataMember(Order = 1, Name = "Key")]
+        public string Key { get; set; }
+
+        // Hier kann ein beliebiger CLR-Typ untergebracht werden.
+        // Das Property wird nicht mit dem DataMemberAttribut dekoriert.
+        public object Data { get; set; }
+
+        // Die WCF serialisiert/ deserialisiert das Objekt vor und nach der Übertragung
+        // in ein byte[].
+        [DataMember(Order = 2, Name = "Data")]
+        private byte[] _abyteData;
+
+        // Serialisiert das object Data in ein byte[].
+        [OnSerializing]
+        private void OnSerializing(StreamingContext context)
+        {
+            using (MemoryStream objStream = new MemoryStream())
+                {
+                    BinaryFormatter objFormatter = new BinaryFormatter();
+                    objFormatter.Serialize(objStream, Data);
+
+                    _abyteData = objStream.ToArray();
+                }
+         }
+
+        // Deserialisiert das byte[] zurück nach object.
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext context)
+        {
+            using (MemoryStream objStream = new MemoryStream())
+                {
+                    objStream.Write(_abyteData, 0, _abyteData.Length);
+                    objStream.Seek(0, SeekOrigin.Begin);
+                    BinaryFormatter objFormatter = new BinaryFormatter();
+
+                    Data = objFormatter.Deserialize(objStream);
+                 }
+        }
+    }
+}</code></pre>
+<p>Ein Visual Studio 2010 Beispielprojekt kann <a href="https://skydrive.live.com/redir.aspx?cid=5a3e2471c6df7b9c&amp;resid=5A3E2471C6DF7B9C!289&amp;parid=5A3E2471C6DF7B9C!287&amp;authkey=!AN0WOSVDRrxuE08" target="_blank">hier</a> heruntergeladen werden.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2012/typ-object-mit-der-wcf-ubermitteln/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

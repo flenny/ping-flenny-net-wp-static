@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Firewall &#8211; Oliver Gut</title>
+	<atom:link href="/tag/firewall/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Tue, 04 Oct 2016 11:33:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Firewall &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Running pfSense on a PCEngines apu1d4</title>
+		<link>/2016/running-pfsense-on-a-pcengines-apu1d4/</link>
+				<comments>/2016/running-pfsense-on-a-pcengines-apu1d4/#respond</comments>
+				<pubDate>Mon, 01 Aug 2016 11:49:42 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Firewall]]></category>
+		<category><![CDATA[pfSense]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=359</guid>
+				<description><![CDATA[Running pfSense on a PCEngines apu1d4. Professional firewall at an affordable price.]]></description>
+								<content:encoded><![CDATA[<blockquote class="twitter-tweet" data-width="550">
+<p lang="en" dir="ltr">Running <a href="https://twitter.com/pfsense">@pfsense</a> on a <a href="https://twitter.com/hashtag/PCEngines?src=hash">#PCEngines</a> <a href="https://twitter.com/hashtag/apu1d4?src=hash">#apu1d4</a>. Professional firewall at an affordable price <a href="https://t.co/PTAhPBfVqm">https://t.co/PTAhPBfVqm</a> <a href="https://t.co/UGwmrV2EKL">pic.twitter.com/UGwmrV2EKL</a></p>
+<p>&mdash; Oliver Gut (@flennynet) <a href="https://twitter.com/flennynet/status/760005220776763392">August 1, 2016</a></p></blockquote>
+<p><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/running-pfsense-on-a-pcengines-apu1d4/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

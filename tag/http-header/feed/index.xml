@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>HTTP header &#8211; Oliver Gut</title>
+	<atom:link href="/tag/http-header/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 31 Mar 2018 14:24:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>HTTP header &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Secure your website by adding some HTTP security headers with NGINX</title>
+		<link>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</link>
+				<comments>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/#respond</comments>
+				<pubDate>Tue, 15 Mar 2016 15:33:21 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[HTTP header]]></category>
+		<category><![CDATA[NGINX]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[SSL]]></category>
+
+		<guid isPermaLink="false">/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</guid>
+				<description><![CDATA[In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit Scott Helme’s blog . He did [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="size-full wp-image-109 alignright" src="/wp-content/uploads/2016/08/secure-http-headers.png" alt="secure-http-headers" width="190em" srcset="/wp-content/uploads/2016/08/secure-http-headers.png 600w, /wp-content/uploads/2016/08/secure-http-headers-150x150.png 150w, /wp-content/uploads/2016/08/secure-http-headers-300x300.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit <a href="https://scotthelme.co.uk/" target="_blank" rel="noopener">Scott Helme’s blog</a> <i class="fa fa-external-link"></i>. He did a pretty good job explaining all different types of HTTP security headers.</p>
+<h3>X-Frame-Options</h3>
+<p><code>X-Frame-Options</code> specifies whether your browser allows framing your site into another site. You can <code>DENY</code>, allow only from <code>SAMEORIGIN</code> or <code>ALLOW-FROM https://a.specific.site.com/</code></p>
+<pre><code class="language-nginx">add_header X-Frame-Options SAMEORIGIN;
+</code></pre>
+<h3>X-Content-Type-Options</h3>
+<p>With <code>nosniff</code> your browser is enforced to use the content-type declared by your server. It helps reducing the risk of so-called drive-by downloads.</p>
+<pre><code class="language-nginx">add_header X-Content-Type-Options nosniff;
+</code></pre>
+<h3>X-XSS-Protection</h3>
+<p><code>X-XSS-Protection</code> enables Cross-site scripting (XSS) filter built-in into most browsers. Although this option is enabled by default, it’s recommend to re-enable and hence reduce the risk in which malicious scripts are injected to your site.</p>
+<pre><code class="language-nginx">add_header X-XSS-Protection "1; mode=block";
+</code></pre>
+<h3>Content-Security-Policy</h3>
+<p><code>Content-Security-Policy</code> defines approved sources your browser may load content from.</p>
+<pre><code class="language-nginx">add_header Content-Security-Policy "default-src https:
+    data: 'unsafe-inline' 'unsafe-eval';" always;
+</code></pre>
+<h3>Strict-Transport-Security</h3>
+<p><code>Strict-Transport-Security</code> enforces your browser to use HTTPS over regular HTTP. Use HTTPS over HTTP everywhere and anytime. Even if it’s a simple personal blog. You can get a free SSL certificate at <a href="https://www.startssl.com/" target="_blank" rel="noopener">StartCom</a> <i class="fa fa-external-link"></i>. Not long ago, Google also started favoring HTTPS sites in search results.</p>
+<pre><code class="language-nginx">add_header Strict-Transport-Security "max-age=31536000;
+    includeSubdomains" always;
+</code></pre>
+<h3>Public-Key-Pins (HPKP)</h3>
+<p>With <code>Public-Key-Pins</code> you are able to tell your browser in which identities he should trust. It protects your site from man-in-the-middle (MitM) attacks and in case if your certificate authority is compromised. The easiest way to get your appropriate key-pins is by running a test at <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener">SSL LABS</a> <i class="fa fa-external-link"></i>. The pins are part of the result.</p>
+<pre><code class="language-nginx">add_header Public-Key-Pins 'pin-sha256="xxx"; pin-sha256="yyy";
+   pin-sha256="zzz"; max-age=2592000; includeSubDomains' always;</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

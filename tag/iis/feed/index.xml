@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IIS &#8211; Oliver Gut</title>
+	<atom:link href="/tag/iis/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:35:55 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>IIS &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Redirect HTTP to HTTPS with URL rewrite module in IIS</title>
+		<link>/2016/http-to-https-with-url-rewrite-module-in-iis/</link>
+				<comments>/2016/http-to-https-with-url-rewrite-module-in-iis/#respond</comments>
+				<pubDate>Thu, 18 Feb 2016 15:04:50 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[SSL]]></category>
+		<category><![CDATA[Windows Server]]></category>
+
+		<guid isPermaLink="false">/2016/http-to-https-with-url-rewrite-module-in-iis/</guid>
+				<description><![CDATA[First download Microsoft’s Web Platform Installer 5.0. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>First download <a href="http://go.microsoft.com/fwlink/?LinkId=255386">Microsoft’s Web Platform Installer 5.0</a>. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below.</p>
+<p><img class="alignnone size-full wp-image-102" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module.png" alt="IIS URL Rewrite module" width="775" height="176" srcset="/wp-content/uploads/2016/08/iis-rewrite-module.png 775w, /wp-content/uploads/2016/08/iis-rewrite-module-300x68.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-768x174.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-700x159.png 700w" sizes="(max-width: 775px) 100vw, 775px" /></p>
+<p>Create a new blank rule with the following adjustments (leave default values):</p>
+<ul>
+<li><strong>Title</strong>: e.g. &#8216;Redirect to HTTPS&#8217;</li>
+<li><strong>Match URL</strong>: Request URL matches the pattern using regular expressions. Pattern: <code>(.*)</code></li>
+<li><strong>Conditions</strong>: Add new. Condition input <code>{HTTPS}</code>, pattern <code>^OFF$</code></li>
+<li><strong>Action</strong>: Action type Redirect, Redirect URL <code>https://{HTTP_HOST}/{R:1}</code> redirect type 303</li>
+</ul>
+<p>Apply and go back to rules overview.</p>
+<p><img class="alignnone size-full wp-image-101" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module-001.png" alt="IIS URL Rewrite module" width="869" height="78" srcset="/wp-content/uploads/2016/08/iis-rewrite-module-001.png 869w, /wp-content/uploads/2016/08/iis-rewrite-module-001-300x27.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-001-768x69.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-001-700x63.png 700w" sizes="(max-width: 869px) 100vw, 869px" /></p>
+<p><strong>Don’t forget to clear &#8216;Require SSL&#8217; checkbox in SSL settings in order to make the redirect working properly.</strong></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/http-to-https-with-url-rewrite-module-in-iis/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

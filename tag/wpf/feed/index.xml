@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>WPF &#8211; Oliver Gut</title>
+	<atom:link href="/tag/wpf/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:37:26 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>WPF &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Toggle WPF control visibility with DataTriggers</title>
+		<link>/2016/toggle-wpf-control-visibility-with-datatriggers/</link>
+				<comments>/2016/toggle-wpf-control-visibility-with-datatriggers/#respond</comments>
+				<pubDate>Wed, 17 Feb 2016 19:24:49 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[.NET]]></category>
+		<category><![CDATA[WPF]]></category>
+		<category><![CDATA[XAML]]></category>
+
+		<guid isPermaLink="false">/2016/toggle-wpf-control-visibility-with-datatriggers/</guid>
+				<description><![CDATA[A frequent source of error while working with triggers is that I set the default value directly on the control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won’t work. The default value has to be set in the control’s style as shown in the example below. &#60;Window x:Class="FlennyNET.Examples.DataTrigger.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>A frequent source of error while working with triggers is that I set the default value directly on the control itself (e.g. Label). Now when trying to change the value with a trigger that unfortunately won’t work. <strong>The default value has to be set in the control’s style</strong> as shown in the example below.</p>
+<pre><code>&lt;Window x:Class="FlennyNET.Examples.DataTrigger.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DataTrigger Example" Height="350" Width="525"&gt;
+    &lt;Grid&gt;
+        &lt;StackPanel Orientation="Horizontal"&gt;
+            &lt;Label Content="DataTrigger Example"&gt;
+                &lt;Label.Style &gt;
+                    &lt;Style TargetType="Label"&gt;
+                        &lt;Setter Property="Visibility" Value="Hidden" /&gt;
+                        &lt;Style.Triggers&gt;
+                            &lt;DataTrigger Binding="{Binding HasValue}" Value="true"&gt;
+                                &lt;Setter Property="Visibility" Value="Visible" /&gt;
+                            &lt;/DataTrigger&gt;
+                        &lt;/Style.Triggers&gt;
+                    &lt;/Style&gt;
+                &lt;/Label.Style&gt;
+            &lt;/Label&gt;
+        &lt;/StackPanel&gt;
+    &lt;/Grid&gt;
+&lt;/Window&gt;
+</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/toggle-wpf-control-visibility-with-datatriggers/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

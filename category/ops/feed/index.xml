@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Ops &#8211; Oliver Gut</title>
+	<atom:link href="/category/ops/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Wed, 05 Sep 2018 19:26:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Ops &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>TCP and UDP ports used by Apple Filing Protocol (AFP)</title>
+		<link>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/</link>
+				<comments>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/#respond</comments>
+				<pubDate>Fri, 25 Nov 2016 14:01:16 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[AFP]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Apple Filing Protocol]]></category>
+		<category><![CDATA[OMV]]></category>
+		<category><![CDATA[OpenMediaVault]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=436</guid>
+				<description><![CDATA[This weekend I have activated the Apple Filing plugin for my OpenMediaVault server in order to improve the overall experience in accessing data from my MacBook. Due to the fact that the firewall on the OMV server is enabled and drops all incoming connections by default, I had to open the ports used by Apples Filing Protocol manually. Port Protocol [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>This weekend I have activated the Apple Filing plugin for my OpenMediaVault server in order to improve the overall experience in accessing data from my MacBook. Due to the fact that the firewall on the OMV server is enabled and drops all incoming connections by default, I had to open the ports used by Apples Filing Protocol manually.<span id="more-436"></span></p>
+<table border="0">
+<tbody>
+<tr>
+<th><strong>Port</strong></th>
+<th><strong>Protocol</strong></th>
+<th><strong>Name</strong></th>
+<th><strong>Purpose</strong></th>
+</tr>
+<tr>
+<td><strong>427</strong></td>
+<td>TCP</td>
+<td>Service Location Protocol (SLP)</td>
+<td>Network Browser, Authentication</td>
+</tr>
+<tr>
+<td><strong>523</strong></td>
+<td>TCP</td>
+<td>Apple Filing Protocol (AFP)</td>
+<td>Apple File Service</td>
+</tr>
+<tr>
+<td><strong>5353</strong></td>
+<td>UDP</td>
+<td>Multicast DNS (MDNS)</td>
+<td>Service Announcement</td>
+</tr>
+</tbody>
+</table>
+]]></content:encoded>
+							<wfw:commentRss>/2016/tcp-and-udp-ports-used-by-apple-filing-protocol-afp/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Fix 0xc0000605 winload.efi boot error in Windows 10</title>
+		<link>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/</link>
+				<comments>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/#respond</comments>
+				<pubDate>Sun, 21 Aug 2016 21:00:23 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Blue Screen]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows 10]]></category>
+
+		<guid isPermaLink="false">/2016/fix-windows-10-0xc000060--winload-efi-boot-error/</guid>
+				<description><![CDATA[On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore.</p>
+<p>These days I got a blue screen (surprise), telling me that a component of the operation system has expired.</p>
+<p><strong>The only way to get out of this awkward situation, was to turn back time in Bios.</strong> Windows started as expected. After upgrading Windows to the latest build, blue screen has gone.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Fix WSUS &#8216;unexpected error&#8217; in MMC after installing Windows updates (KB3148812/KB3159706)</title>
+		<link>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/</link>
+				<comments>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/#respond</comments>
+				<pubDate>Mon, 04 Jul 2016 15:59:12 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<category><![CDATA[Windows Updates]]></category>
+		<category><![CDATA[WSUS]]></category>
+
+		<guid isPermaLink="false">/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates/</guid>
+				<description><![CDATA[Update 4/7/2016: Same issue with KB3159706. After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to this article Windows update KB3148812, which recently was released, [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong><span style="color: #ff0000;">Update 4/7/2016: Same issue with KB3159706.</span></strong></p>
+<p>After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to <a href="http://blogs.technet.com/b/wsus/archive/2016/04/20/known-issues-with-kb3148812.aspx" target="_blank">this</a> <i class="fa fa-external-link"></i> article Windows update KB3148812, which recently was released, broke Windows Server Update Services (WSUS). Uninstalling this specific update and rebooting the server fixed the problem.</p>
+<p><img class="alignnone size-full wp-image-115" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/wsus-remove-update.png" alt="remove windows update" width="849" height="412" srcset="/wp-content/uploads/2016/08/wsus-remove-update.png 849w, /wp-content/uploads/2016/08/wsus-remove-update-300x146.png 300w, /wp-content/uploads/2016/08/wsus-remove-update-768x373.png 768w, /wp-content/uploads/2016/08/wsus-remove-update-700x340.png 700w" sizes="(max-width: 849px) 100vw, 849px" /></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Secure your website by adding some HTTP security headers with NGINX</title>
+		<link>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</link>
+				<comments>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/#respond</comments>
+				<pubDate>Tue, 15 Mar 2016 15:33:21 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[HTTP header]]></category>
+		<category><![CDATA[NGINX]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[SSL]]></category>
+
+		<guid isPermaLink="false">/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/</guid>
+				<description><![CDATA[In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit Scott Helme’s blog . He did [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="size-full wp-image-109 alignright" src="/wp-content/uploads/2016/08/secure-http-headers.png" alt="secure-http-headers" width="190em" srcset="/wp-content/uploads/2016/08/secure-http-headers.png 600w, /wp-content/uploads/2016/08/secure-http-headers-150x150.png 150w, /wp-content/uploads/2016/08/secure-http-headers-300x300.png 300w" sizes="(max-width: 600px) 100vw, 600px" /></p>
+<p>In order to make your site a more secure place, it’s recommended to add some HTTP security headers into your web servers response. Without going to much into detail here, the aim of this blog post is to give you a basic NGINX configuration. For more detailed information visit <a href="https://scotthelme.co.uk/" target="_blank" rel="noopener">Scott Helme’s blog</a> <i class="fa fa-external-link"></i>. He did a pretty good job explaining all different types of HTTP security headers.</p>
+<h3>X-Frame-Options</h3>
+<p><code>X-Frame-Options</code> specifies whether your browser allows framing your site into another site. You can <code>DENY</code>, allow only from <code>SAMEORIGIN</code> or <code>ALLOW-FROM https://a.specific.site.com/</code></p>
+<pre><code class="language-nginx">add_header X-Frame-Options SAMEORIGIN;
+</code></pre>
+<h3>X-Content-Type-Options</h3>
+<p>With <code>nosniff</code> your browser is enforced to use the content-type declared by your server. It helps reducing the risk of so-called drive-by downloads.</p>
+<pre><code class="language-nginx">add_header X-Content-Type-Options nosniff;
+</code></pre>
+<h3>X-XSS-Protection</h3>
+<p><code>X-XSS-Protection</code> enables Cross-site scripting (XSS) filter built-in into most browsers. Although this option is enabled by default, it’s recommend to re-enable and hence reduce the risk in which malicious scripts are injected to your site.</p>
+<pre><code class="language-nginx">add_header X-XSS-Protection "1; mode=block";
+</code></pre>
+<h3>Content-Security-Policy</h3>
+<p><code>Content-Security-Policy</code> defines approved sources your browser may load content from.</p>
+<pre><code class="language-nginx">add_header Content-Security-Policy "default-src https:
+    data: 'unsafe-inline' 'unsafe-eval';" always;
+</code></pre>
+<h3>Strict-Transport-Security</h3>
+<p><code>Strict-Transport-Security</code> enforces your browser to use HTTPS over regular HTTP. Use HTTPS over HTTP everywhere and anytime. Even if it’s a simple personal blog. You can get a free SSL certificate at <a href="https://www.startssl.com/" target="_blank" rel="noopener">StartCom</a> <i class="fa fa-external-link"></i>. Not long ago, Google also started favoring HTTPS sites in search results.</p>
+<pre><code class="language-nginx">add_header Strict-Transport-Security "max-age=31536000;
+    includeSubdomains" always;
+</code></pre>
+<h3>Public-Key-Pins (HPKP)</h3>
+<p>With <code>Public-Key-Pins</code> you are able to tell your browser in which identities he should trust. It protects your site from man-in-the-middle (MitM) attacks and in case if your certificate authority is compromised. The easiest way to get your appropriate key-pins is by running a test at <a href="https://www.ssllabs.com/ssltest/" target="_blank" rel="noopener">SSL LABS</a> <i class="fa fa-external-link"></i>. The pins are part of the result.</p>
+<pre><code class="language-nginx">add_header Public-Key-Pins 'pin-sha256="xxx"; pin-sha256="yyy";
+   pin-sha256="zzz"; max-age=2592000; includeSubDomains' always;</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/secure-your-website-by-adding-some-http-security-headers-with-nginx/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Fix error &#8216;index.php was not found on this server&#8217; after upgrading ownCloud to version 9</title>
+		<link>/2016/owncloud-9-fix-error-index-php-was-not-found/</link>
+				<comments>/2016/owncloud-9-fix-error-index-php-was-not-found/#respond</comments>
+				<pubDate>Wed, 09 Mar 2016 22:05:00 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[ownCloud]]></category>
+		<category><![CDATA[Ubuntu]]></category>
+
+		<guid isPermaLink="false">/2016/owncloud-9-fix-error-index-php-was-not-found/</guid>
+				<description><![CDATA[If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using apt-get dist upgrade), you probably get the error message shown above. Adding /index.php manually still redirects to the ownCloud login screen. As mentioned here open .htaccess in /var/www/owncloud an comment out the line RewriteRule .* index.php [PT,E=PATH_INFO:$1] and restart apache with service apache2 restart]]></description>
+								<content:encoded><![CDATA[<p>If you just upgraded ownCloud on Ubuntu 15.10 to version 9 (using <code>apt-get dist upgrade</code>), you probably get the error message shown above. Adding <code>/index.php</code> manually still redirects to the ownCloud login screen.</p>
+<p>As mentioned <a href="https://github.com/owncloud/core/issues/22970">here</a> open <code>.htaccess</code> in <code>/var/www/owncloud</code> an comment out<br />
+the line</p>
+<pre><code>RewriteRule .* index.php [PT,E=PATH_INFO:$1]</code></pre>
+<p>and restart apache with</p>
+<pre><code>service apache2 restart</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/owncloud-9-fix-error-index-php-was-not-found/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Redirect HTTP to HTTPS with URL rewrite module in IIS</title>
+		<link>/2016/http-to-https-with-url-rewrite-module-in-iis/</link>
+				<comments>/2016/http-to-https-with-url-rewrite-module-in-iis/#respond</comments>
+				<pubDate>Thu, 18 Feb 2016 15:04:50 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IIS]]></category>
+		<category><![CDATA[SSL]]></category>
+		<category><![CDATA[Windows Server]]></category>
+
+		<guid isPermaLink="false">/2016/http-to-https-with-url-rewrite-module-in-iis/</guid>
+				<description><![CDATA[First download Microsoft’s Web Platform Installer 5.0. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>First download <a href="http://go.microsoft.com/fwlink/?LinkId=255386">Microsoft’s Web Platform Installer 5.0</a>. It’s a free tool that makes getting the latest components for Internet Information Services (IIS) easy. In Web Platform Installer search for ‘url rewrite’ and and install the one and only search result &#8216;URL Rewrite 2.0&#8217;. Restart IIS in order to make URL Rewrite module visible as shown below.</p>
+<p><img class="alignnone size-full wp-image-102" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module.png" alt="IIS URL Rewrite module" width="775" height="176" srcset="/wp-content/uploads/2016/08/iis-rewrite-module.png 775w, /wp-content/uploads/2016/08/iis-rewrite-module-300x68.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-768x174.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-700x159.png 700w" sizes="(max-width: 775px) 100vw, 775px" /></p>
+<p>Create a new blank rule with the following adjustments (leave default values):</p>
+<ul>
+<li><strong>Title</strong>: e.g. &#8216;Redirect to HTTPS&#8217;</li>
+<li><strong>Match URL</strong>: Request URL matches the pattern using regular expressions. Pattern: <code>(.*)</code></li>
+<li><strong>Conditions</strong>: Add new. Condition input <code>{HTTPS}</code>, pattern <code>^OFF$</code></li>
+<li><strong>Action</strong>: Action type Redirect, Redirect URL <code>https://{HTTP_HOST}/{R:1}</code> redirect type 303</li>
+</ul>
+<p>Apply and go back to rules overview.</p>
+<p><img class="alignnone size-full wp-image-101" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/iis-rewrite-module-001.png" alt="IIS URL Rewrite module" width="869" height="78" srcset="/wp-content/uploads/2016/08/iis-rewrite-module-001.png 869w, /wp-content/uploads/2016/08/iis-rewrite-module-001-300x27.png 300w, /wp-content/uploads/2016/08/iis-rewrite-module-001-768x69.png 768w, /wp-content/uploads/2016/08/iis-rewrite-module-001-700x63.png 700w" sizes="(max-width: 869px) 100vw, 869px" /></p>
+<p><strong>Don’t forget to clear &#8216;Require SSL&#8217; checkbox in SSL settings in order to make the redirect working properly.</strong></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/http-to-https-with-url-rewrite-module-in-iis/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Redirect any subdomain http or https to a single subdomain with NGINX</title>
+		<link>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/</link>
+				<comments>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/#respond</comments>
+				<pubDate>Wed, 03 Feb 2016 20:37:18 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[NGINX]]></category>
+		<category><![CDATA[SSL]]></category>
+
+		<guid isPermaLink="false">/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/</guid>
+				<description><![CDATA[Today I had a use case where I wanted to redirect any subdomain at any scheme (http or https) to a single https subdomain ./ http://blog.flenny.net/ should redirect to / https://www.flenny.net/ should redirect to / In order to redirect both schemes (http and https) to a single subdomain you have to setup two server blocks. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-149" src="http://wordpress.flenny.net/wp-content/uploads/2016/01/nginx.png" alt="NGINX" width="300" height="69" /></p>
+<p>Today I had a use case where I wanted to redirect any subdomain at any scheme (http or https) to a single https subdomain <a href="/">/</a>.</p>
+<p><a href="http://blog.flenny.net/">http://blog.flenny.net/</a> should redirect to <a href="/">/</a><br />
+<a href="https://www.flenny.net/">https://www.flenny.net/</a> should redirect to <a href="/">/</a></p>
+<p>In order to redirect both schemes (http and https) to a single subdomain you have to setup two <code>server</code> blocks. The first one catches all the traffic to any scheme (<code>listen 80; listen 443</code>) at any subdomain (<code>*.flenny.net</code>). The second one listens only on port <code>443</code> and the specific subdomain <code>ping.flenny.net</code>.</p>
+<pre><code class="language-nginx">	server {
+		listen 80;
+		listen 443 ssl;
+		server_name *.flenny.net;
+		return 301 $request_uri;/
+	}
+	
+	server {
+		listen 443 default ssl;
+		server_name ping.flenny.net;
+		
+		root /var/www/flenny;
+		index index.html index.htm;
+	
+		ssl on;
+		ssl_certificate			path/to/ssl.crt;
+		ssl_certificate_key		path/to/ssl.key;
+				
+		location / {
+			proxy_pass https://x.y.z;/
+		}
+	}
+</code></pre>
+<p>For a specific port you can only have one ssl configuration section (<code>ssl_certificate</code>, <code>ssl_certificate_key</code>). As shown in the example above use the keyword <code>default</code> to flag the appropriate <code>server</code> block.</p>
+<p><strong>Important:</strong> In order to properly redirect e.g. <a href="https://blog.flenny.net/">https://blog.flenny.net/</a> to <a href="/">/</a> you must have a valid ssl certificate for both subdomains.</p>
+<p>A full example of a working NGINX configuration you can get <a href="https://gist.github.com/flenny/de4b6ab465ed5b1c6886" target="_blank">here</a>.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/nginx-redirect-any-subdomain-http-or-https-to-a-single-subdomain/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>Disable SSH connections over IPv6</title>
+		<link>/2016/disable-ssh-connections-over-ipv6/</link>
+				<comments>/2016/disable-ssh-connections-over-ipv6/#respond</comments>
+				<pubDate>Sun, 31 Jan 2016 23:31:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IPv6]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/disable-ssh-connections-over-ipv6/</guid>
+				<description><![CDATA[If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&#160;versions. In order to restrict access to protocol version 4 you have to comment in the line #ListenAddress 0.0.0.0 in your /etc/ssh/sshd_config. #ListenAddress :: ListenAddress 0.0.0.0 Restart SSH service for the changes to take effect. sudo service [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&nbsp;versions. In order to restrict access to protocol version 4 you have to comment in the line<br />
+<code>#ListenAddress 0.0.0.0</code> in your <code>/etc/ssh/sshd_config</code>.</p>
+<pre><code class="language-vim">#ListenAddress ::
+ListenAddress 0.0.0.0
+</code></pre>
+<p>Restart SSH service for the changes to take effect.</p>
+<pre><code class="language-bash">sudo service sshd restart
+</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/disable-ssh-connections-over-ipv6/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>SSH into a Proxmox LXC container</title>
+		<link>/2016/ssh-into-a-proxmox-lxc-container/</link>
+				<comments>/2016/ssh-into-a-proxmox-lxc-container/#respond</comments>
+				<pubDate>Tue, 26 Jan 2016 17:46:46 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/ssh-into-a-proxmox-lxc-container/</guid>
+				<description><![CDATA[By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container. Option #1: Attach to the container through Proxmox [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-151" src="http://wordpress.flenny.net/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" width="300" height="45" /></p>
+<p>By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.</p>
+<h2 id="option-1-attach-to-the-container-through-proxmox-host:5afcdfa0a16694e52c79ef330542c0e9">Option #1: Attach to the container through Proxmox host</h2>
+<p>Login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>The name of the container corresponds to the unique VM ID which you can see in the container’s description.</p>
+<p><img class="alignnone size-full wp-image-110" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-001.png" alt="ssh-into-container-001" width="686" height="62" srcset="/wp-content/uploads/2016/08/ssh-into-container-001.png 686w, /wp-content/uploads/2016/08/ssh-into-container-001-300x27.png 300w" sizes="(max-width: 686px) 100vw, 686px" /></p>
+<p><img class="alignnone size-full wp-image-112" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container.png" alt="ssh-into-container" width="661" height="237" srcset="/wp-content/uploads/2016/08/ssh-into-container.png 661w, /wp-content/uploads/2016/08/ssh-into-container-300x108.png 300w" sizes="(max-width: 661px) 100vw, 661px" /></p>
+<h2 id="option-2-allow-login-with-password-on-the-specific-container:5afcdfa0a16694e52c79ef330542c0e9">Option #2: Allow login with password on the specific container</h2>
+<p>By default a Proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>Open <code>sshd_config</code></p>
+<pre><code class="language-bash">nano /etc/ssh/sshd_config
+</code></pre>
+<p>and change the line <code>PermitRootLogin without-password</code> to <code>PermitRootLogin yes</code>. Exit nano with <code>Ctrl+X</code> and save changes with <code>y</code> and <code>ENTER</code>.</p>
+<p><img class="alignnone size-full wp-image-111" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-002.png" alt="ssh-into-container-002" width="656" height="288" srcset="/wp-content/uploads/2016/08/ssh-into-container-002.png 656w, /wp-content/uploads/2016/08/ssh-into-container-002-300x132.png 300w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p>Restart ssh service for the changes to take effect.</p>
+<pre><code class="language-bash">service ssh restart
+</code></pre>
+<p>Try to establish a direct SSH connection to your container’s IP (If you don’t know the container’s IP run <code>ifconfig</code>).</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/ssh-into-a-proxmox-lxc-container/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>How to update Proxmox LXC container templates</title>
+		<link>/2016/how-to-update-proxmox-lxc-container-templates/</link>
+				<comments>/2016/how-to-update-proxmox-lxc-container-templates/#respond</comments>
+				<pubDate>Thu, 21 Jan 2016 19:04:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[Templates]]></category>
+
+		<guid isPermaLink="false">/2016/how-to-update-proxmox-lxc-container-templates/</guid>
+				<description><![CDATA[By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following commandon your host’s console. pveam update You will find the templates right on your local storage &#62; content &#62; templates.]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" class="wp-image-151"/></figure>
+
+
+<p>By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).<br />In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following command<br />on your host’s console.</p>
+<pre><code class="language-bash">pveam update
+</code></pre>
+<p>You will find the templates right on your local storage &gt; content &gt; templates.</p>
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/08/pve-lxc-update.png" alt="" class="wp-image-104" srcset="/wp-content/uploads/2016/08/pve-lxc-update.png 651w, /wp-content/uploads/2016/08/pve-lxc-update-300x153.png 300w" sizes="(max-width: 651px) 100vw, 651px" /></figure>
+]]></content:encoded>
+							<wfw:commentRss>/2016/how-to-update-proxmox-lxc-container-templates/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

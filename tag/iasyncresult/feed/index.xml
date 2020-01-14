@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>IAsyncResult &#8211; Oliver Gut</title>
+	<atom:link href="/tag/iasyncresult/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:40:58 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>IAsyncResult &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Clientseitige asynchrone Serviceaufrufe mit der ChannelFactory</title>
+		<link>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/</link>
+				<comments>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/#comments</comments>
+				<pubDate>Sat, 11 Feb 2012 23:50:12 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[async]]></category>
+		<category><![CDATA[AsyncCallback]]></category>
+		<category><![CDATA[asynchronous operations]]></category>
+		<category><![CDATA[ChannelFactory]]></category>
+		<category><![CDATA[IAsyncResult]]></category>
+		<category><![CDATA[svcutil]]></category>
+		<category><![CDATA[WCF]]></category>
+
+		<guid isPermaLink="false">http://flenny.wordpress.com/?p=37</guid>
+				<description><![CDATA[Wenn eine WPF Applikation entfernte Methoden ausführen will (Interprozesskommunikation), sollten diese wenn immer möglich asynchron ausgeführt werden. Wir müssen immer davon ausgehen, dass auch scheinbar kurze Funktionen für einmal auch mal länger dauern können. Zudem werden die Aufrufe in einer WPF Applikation standardmässig im UI Thread ausgeführt. Das  führt dazu, dass die Benutzeroberfläche in der [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Wenn eine WPF Applikation entfernte Methoden ausführen will (Interprozesskommunikation), sollten diese wenn immer möglich asynchron ausgeführt werden. Wir müssen immer davon ausgehen, dass auch scheinbar kurze Funktionen für einmal auch mal länger dauern können. Zudem werden die Aufrufe in einer WPF Applikation standardmässig im UI Thread ausgeführt. Das  führt dazu, dass die Benutzeroberfläche in der Zwischenzeit für den Benutzer einfrieren kann (&#8216;Keine Rückmeldung&#8217; wird in der Titelleiste angezeigt.)</p>
+<p>Mit der WCF gibt es verschiedene Möglichkeiten die Aufrufe asynchron umzusetzen.</p>
+<ul>
+<li>Mit dem generierten Client-Proxy via svcutil mit dem Parameter <code>/async</code><br />
+Bspw: <code>svcutil *.wsdl *xsd /l:c# /out: FlennyNET.LearingWCF.ClientProxy.cs /async</code></li>
+<li>Über die Funktion <em>Add Service Reference</em> in den erweiterten Einstellungen das Kontrollkästchen <em>generate asynchronous operations</em> anwählen.</li>
+<li>Oder die Funktion serverseitig mit dem AsyncPattern implementieren.</li>
+</ul>
+<p>Ich konnte mit den automatisch generierten Proxies noch nie etwas anfangen, weshalb ich in meinen Projekten oft die ChannelFactory einsetze. Sämtliche Service- und Datenverträge lagere ich in eine zusätzliche Assembly aus, so dass Client und auch Server darauf zugreifen können. Die ChannelFactory bietet mir aber leider keine asynchrone Methoden der Schnittstelle an. Die Asynchronizität kann nur erreicht werden, wenn für jeden Aufruf künstlich einen Thread hergestellt wird.</p>
+<p>Ich bin ein fauler Programmierer und möchte mich weder auf der Server- noch auf der Clientseite um irgendwelche Arbeiten, die mir schlussendlich einen simplen asynchronen Methodenaufruf bereitstellen, kümmern müssen. Das sollte doch eigentlich die Aufgabe von der WCF sein!</p>
+<p>Die Lösung/ Workaround funktioniert nun wie folgt:</p>
+<p>Ich erstelle wie gewohnt ein ServiceContract</p>
+<pre><code>[ServiceContract(Name = "DemoContract", Namespace = "/")]
+ public interface IfleDemoContract
+ {
+     [OperationContract]
+     CfleDemoData GetData();
+ }</code></pre>
+<p>Dabei ist hier bereits wichtig zu beachten, dass für das WSDL einen expliziten Namen angegeben werden muss (bspw. &#8216;DemoContract&#8217;). Auf der Seite des Servers implementieren wir nun dieses Interface normal synchron. Mit dem System.Threading.Thread.Sleep() erzeugen wir eine künstliche Verzögerung.</p>
+<pre><code>public class CfleDemoContract : IfleDemoContract
+ {
+     public CfleDemoData GetData()
+     {
+         System.Threading.Thread.Sleep(5000);
+
+         return new CfleDemoData {
+             Id = 0,
+             Content = "Daten vom Server!" };
+     }
+ }</code></pre>
+<p>Wenn wir nun auf Seite des Clients einen neuen Proxy mit der ChannelFactory erzeugen, steht uns nur die synchrone Variante zur Verfügung.</p>
+<p><a href="http://wordpress.flenny.net/wp-content/uploads/2012/02/sync1-1.png"><img class="alignnone size-full wp-image-233" src="http://wordpress.flenny.net/wp-content/uploads/2012/02/sync1-1.png" alt="sync1" width="500" height="130" srcset="/wp-content/uploads/2012/02/sync1-1.png 500w, /wp-content/uploads/2012/02/sync1-1-300x78.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Damit wir nun auf Seite des Clients die asynchronen Methoden vom WCF Framework zur Verfügung gestellt bekommen, erstellen wir ein zweites Interface, welches die zusätzlichen Methoden für die asynchrone Ausführung gemäss dem AsyncPattern zur Verfügung stellt. Auch hier ist die explizite Namesvergabe für das Interface wieder speziell zu berücksichtigen. Die Namen der beiden Interfaces müssen identisch sein.</p>
+<pre><code>[ServiceContract(Name = "DemoContract", Namespace = "/")]
+ public interface IfleDemoContractAsync
+ {
+     [OperationContract(AsyncPattern = true)]
+     IAsyncResult BeginGetData(AsyncCallback callback, object asyncState);
+     CfleDemoData EndGetData(IAsyncResult result);
+ }</code></pre>
+<p>Der Proxy wird dann wie folgt erstellt.</p>
+<pre><code>IfleDemoContractAsync objProxy = ChannelFactory.
+     CreateChannel(new NetTcpBinding(),
+         new EndpointAddress("net.tcp://localhost:9876/flennyNET"));</code></pre>
+<p>Danach stehen die asynchronen Methoden zur Verfügung.</p>
+<p><a href="http://wordpress.flenny.net/wp-content/uploads/2012/02/async-1.png"><img class="alignnone size-full wp-image-232" src="http://wordpress.flenny.net/wp-content/uploads/2012/02/async-1.png" alt="async" width="500" height="128" srcset="/wp-content/uploads/2012/02/async-1.png 500w, /wp-content/uploads/2012/02/async-1-300x77.png 300w" sizes="(max-width: 500px) 100vw, 500px" /></a></p>
+<p>Der clientseitige notwendige Thread wird nun vom WCF Framework automatisch erstellt.</p>
+<p>Mit diesem Vorgehen erreichen wir, dass wir serverseitig normal synchron programmieren können und clientseitig die ChannelFactory verwenden können und uns aber nicht um die Erstellung von Threads kümmern müssen.</p>
+<p>Ich hab euch auch hier wieder ein Visual Studio 2010 Demo Projekt erstellt, welches ihr <a href="https://skydrive.live.com/redir.aspx?cid=5a3e2471c6df7b9c&amp;resid=5A3E2471C6DF7B9C!290&amp;parid=5A3E2471C6DF7B9C!287&amp;authkey=!ACx1H-AyEFra5oU" target="_blank">hier</a> herunterladen könnt. Viel Spass!</p>
+]]></content:encoded>
+							<wfw:commentRss>/2012/clientseitige-asynchrone-serviceaufrufe-mit-der-channelfactory/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+							</item>
+	</channel>
+</rss>

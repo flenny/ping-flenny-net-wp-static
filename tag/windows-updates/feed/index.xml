@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows Updates &#8211; Oliver Gut</title>
+	<atom:link href="/tag/windows-updates/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:44:30 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Windows Updates &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Fix WSUS &#8216;unexpected error&#8217; in MMC after installing Windows updates (KB3148812/KB3159706)</title>
+		<link>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/</link>
+				<comments>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/#respond</comments>
+				<pubDate>Mon, 04 Jul 2016 15:59:12 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows Server]]></category>
+		<category><![CDATA[Windows Updates]]></category>
+		<category><![CDATA[WSUS]]></category>
+
+		<guid isPermaLink="false">/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates/</guid>
+				<description><![CDATA[Update 4/7/2016: Same issue with KB3159706. After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to this article Windows update KB3148812, which recently was released, [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><strong><span style="color: #ff0000;">Update 4/7/2016: Same issue with KB3159706.</span></strong></p>
+<p>After installing the latest Windows updates, WSUS Update Services MMC console gave me a nice ‘Error: Unexpected Error’ message. Removing and reconnecting the server in MMC, didn’t help. Neither restarting ‘WSUS Service’ nor rebooting the server solved the problem. According to <a href="http://blogs.technet.com/b/wsus/archive/2016/04/20/known-issues-with-kb3148812.aspx" target="_blank">this</a> <i class="fa fa-external-link"></i> article Windows update KB3148812, which recently was released, broke Windows Server Update Services (WSUS). Uninstalling this specific update and rebooting the server fixed the problem.</p>
+<p><img class="alignnone size-full wp-image-115" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/wsus-remove-update.png" alt="remove windows update" width="849" height="412" srcset="/wp-content/uploads/2016/08/wsus-remove-update.png 849w, /wp-content/uploads/2016/08/wsus-remove-update-300x146.png 300w, /wp-content/uploads/2016/08/wsus-remove-update-768x373.png 768w, /wp-content/uploads/2016/08/wsus-remove-update-700x340.png 700w" sizes="(max-width: 849px) 100vw, 849px" /></p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-wsus-unexpected-error-in-mmc-after-installing-windows-updates-kb3148812kb3159706/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Templates &#8211; Oliver Gut</title>
+	<atom:link href="/tag/templates/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Wed, 05 Sep 2018 19:26:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Templates &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>How to update Proxmox LXC container templates</title>
+		<link>/2016/how-to-update-proxmox-lxc-container-templates/</link>
+				<comments>/2016/how-to-update-proxmox-lxc-container-templates/#respond</comments>
+				<pubDate>Thu, 21 Jan 2016 19:04:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[Templates]]></category>
+
+		<guid isPermaLink="false">/2016/how-to-update-proxmox-lxc-container-templates/</guid>
+				<description><![CDATA[By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following commandon your host’s console. pveam update You will find the templates right on your local storage &#62; content &#62; templates.]]></description>
+								<content:encoded><![CDATA[
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" class="wp-image-151"/></figure>
+
+
+<p>By default LXC container templates are not available after installing Proxmox Virtual Environment (PVE).<br />In order to enable templates for Ubuntu, Joomla, OwnCloud, WordPress or OpenVPN run the following command<br />on your host’s console.</p>
+<pre><code class="language-bash">pveam update
+</code></pre>
+<p>You will find the templates right on your local storage &gt; content &gt; templates.</p>
+
+
+<figure class="wp-block-image"><img src="/wp-content/uploads/2016/08/pve-lxc-update.png" alt="" class="wp-image-104" srcset="/wp-content/uploads/2016/08/pve-lxc-update.png 651w, /wp-content/uploads/2016/08/pve-lxc-update-300x153.png 300w" sizes="(max-width: 651px) 100vw, 651px" /></figure>
+]]></content:encoded>
+							<wfw:commentRss>/2016/how-to-update-proxmox-lxc-container-templates/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>SSH &#8211; Oliver Gut</title>
+	<atom:link href="/tag/ssh/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Thu, 22 Sep 2016 18:23:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>SSH &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Disable SSH connections over IPv6</title>
+		<link>/2016/disable-ssh-connections-over-ipv6/</link>
+				<comments>/2016/disable-ssh-connections-over-ipv6/#respond</comments>
+				<pubDate>Sun, 31 Jan 2016 23:31:43 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[IPv6]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/disable-ssh-connections-over-ipv6/</guid>
+				<description><![CDATA[If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&#160;versions. In order to restrict access to protocol version 4 you have to comment in the line #ListenAddress 0.0.0.0 in your /etc/ssh/sshd_config. #ListenAddress :: ListenAddress 0.0.0.0 Restart SSH service for the changes to take effect. sudo service [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>If a network interface offers IPv4 as well as IPv6, by default Ubuntu’s SSH server listens on both IP&nbsp;versions. In order to restrict access to protocol version 4 you have to comment in the line<br />
+<code>#ListenAddress 0.0.0.0</code> in your <code>/etc/ssh/sshd_config</code>.</p>
+<pre><code class="language-vim">#ListenAddress ::
+ListenAddress 0.0.0.0
+</code></pre>
+<p>Restart SSH service for the changes to take effect.</p>
+<pre><code class="language-bash">sudo service sshd restart
+</code></pre>
+]]></content:encoded>
+							<wfw:commentRss>/2016/disable-ssh-connections-over-ipv6/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+		<item>
+		<title>SSH into a Proxmox LXC container</title>
+		<link>/2016/ssh-into-a-proxmox-lxc-container/</link>
+				<comments>/2016/ssh-into-a-proxmox-lxc-container/#respond</comments>
+				<pubDate>Tue, 26 Jan 2016 17:46:46 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[LXC]]></category>
+		<category><![CDATA[Proxmox]]></category>
+		<category><![CDATA[SSH]]></category>
+
+		<guid isPermaLink="false">/2016/ssh-into-a-proxmox-lxc-container/</guid>
+				<description><![CDATA[By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container. Option #1: Attach to the container through Proxmox [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p><img class="alignnone size-full wp-image-151" src="http://wordpress.flenny.net/wp-content/uploads/2016/01/proxmox.png" alt="Proxmox" width="300" height="45" /></p>
+<p>By default it’s not possible to establish a direct SSH connection to a Proxmox LXC container. In order to SSH into a container there are two options available. Either you attach to the container through Proxmox host or you allow login with password on the specific container.</p>
+<h2 id="option-1-attach-to-the-container-through-proxmox-host:5afcdfa0a16694e52c79ef330542c0e9">Option #1: Attach to the container through Proxmox host</h2>
+<p>Login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>The name of the container corresponds to the unique VM ID which you can see in the container’s description.</p>
+<p><img class="alignnone size-full wp-image-110" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-001.png" alt="ssh-into-container-001" width="686" height="62" srcset="/wp-content/uploads/2016/08/ssh-into-container-001.png 686w, /wp-content/uploads/2016/08/ssh-into-container-001-300x27.png 300w" sizes="(max-width: 686px) 100vw, 686px" /></p>
+<p><img class="alignnone size-full wp-image-112" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container.png" alt="ssh-into-container" width="661" height="237" srcset="/wp-content/uploads/2016/08/ssh-into-container.png 661w, /wp-content/uploads/2016/08/ssh-into-container-300x108.png 300w" sizes="(max-width: 661px) 100vw, 661px" /></p>
+<h2 id="option-2-allow-login-with-password-on-the-specific-container:5afcdfa0a16694e52c79ef330542c0e9">Option #2: Allow login with password on the specific container</h2>
+<p>By default a Proxmox LXC container allows root login only with public key authentication. To login to a container with username/password login to your Proxmox host and attach to the container with the following command.</p>
+<pre><code class="language-bash">lxc-attach --name 109
+</code></pre>
+<p>Open <code>sshd_config</code></p>
+<pre><code class="language-bash">nano /etc/ssh/sshd_config
+</code></pre>
+<p>and change the line <code>PermitRootLogin without-password</code> to <code>PermitRootLogin yes</code>. Exit nano with <code>Ctrl+X</code> and save changes with <code>y</code> and <code>ENTER</code>.</p>
+<p><img class="alignnone size-full wp-image-111" src="http://wordpress.flenny.net/wp-content/uploads/2016/08/ssh-into-container-002.png" alt="ssh-into-container-002" width="656" height="288" srcset="/wp-content/uploads/2016/08/ssh-into-container-002.png 656w, /wp-content/uploads/2016/08/ssh-into-container-002-300x132.png 300w" sizes="(max-width: 656px) 100vw, 656px" /></p>
+<p>Restart ssh service for the changes to take effect.</p>
+<pre><code class="language-bash">service ssh restart
+</code></pre>
+<p>Try to establish a direct SSH connection to your container’s IP (If you don’t know the container’s IP run <code>ifconfig</code>).</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/ssh-into-a-proxmox-lxc-container/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

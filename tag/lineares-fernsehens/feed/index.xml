@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Lineares Fernsehens &#8211; Oliver Gut</title>
+	<atom:link href="/tag/lineares-fernsehens/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Fri, 02 Dec 2016 20:10:47 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Lineares Fernsehens &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Lineares Fernsehen und fantastische Podcasts</title>
+		<link>/2016/lineares-fernsehen-und-fantastische-podcasts/</link>
+				<comments>/2016/lineares-fernsehen-und-fantastische-podcasts/#respond</comments>
+				<pubDate>Tue, 01 Nov 2016 10:29:27 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Snippets]]></category>
+		<category><![CDATA[Apfelfunk]]></category>
+		<category><![CDATA[Bits und so]]></category>
+		<category><![CDATA[Chaosradio]]></category>
+		<category><![CDATA[GeekTalk]]></category>
+		<category><![CDATA[GeekWeek]]></category>
+		<category><![CDATA[heise Developer]]></category>
+		<category><![CDATA[Lineares Fernsehen]]></category>
+		<category><![CDATA[Lineares Fernsehens]]></category>
+		<category><![CDATA[LTE]]></category>
+		<category><![CDATA[Nerdfunk]]></category>
+		<category><![CDATA[Netflix]]></category>
+		<category><![CDATA[Podcast]]></category>
+		<category><![CDATA[PsychCast]]></category>
+		<category><![CDATA[Raidenger.de]]></category>
+		<category><![CDATA[Salt]]></category>
+		<category><![CDATA[SRF]]></category>
+
+		<guid isPermaLink="false">http://wordpress.flenny.net/?p=366</guid>
+				<description><![CDATA[Das Konzept des linearen Fernsehens ist mit kleinen Kindern nicht wirklich kompatibel. Unser Kabelanschluss haben wir deshalb schon seit längerer Zeit gekündigt und durch schnörkelloses reines LTE Internet von Salt ersetzt. Konsumieren tun wir aber nach wie vor (und gefühlt auch nicht weniger) nur gezielter. Das Schweizer Fernsehen SRF produziert tolle Inhalte die jederzeit über SRF Play abgerufen werden können. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Das Konzept des linearen Fernsehens ist mit kleinen Kindern nicht wirklich kompatibel. Unser Kabelanschluss haben wir deshalb schon seit längerer Zeit gekündigt und durch schnörkelloses reines LTE Internet von <a href="https://goo.gl/B7IWSB" target="_blank">Salt</a> ersetzt.</p>
+<p><span id="more-366"></span></p>
+<p>Konsumieren tun wir aber nach wie vor (und gefühlt auch nicht weniger) nur gezielter.</p>
+<p>Das Schweizer Fernsehen SRF produziert tolle Inhalte die jederzeit über <a href="https://goo.gl/lqyPkx" target="_blank">SRF Play</a> abgerufen werden können. Auch die knapp 15 Franken pro Monat für Netflix sind für mich als Serien-Junkie sehr gut angelegt.</p>
+<p>Nicht mehr wegzudenken sind aber vor allem die zahlreichen und absolut fantastischen Podcasts die meist wöchentlich in meinem Podcatcher aufschlagen. <strong>Herzlichen Dank an alle Podcaster da draussen für eure wertvolle Arbeit. Ihr bereichert das Web ungemein!</strong></p>
+<p>Aktuell verwende ich die App <a href="https://goo.gl/A6kpO9" target="_blank">Pocket Casts</a>, die es für iOS, Android und den Webbrowser gibt. Abonnierte Podcasts und Abspielpositionen synchronisiert die App über alle Plattformen hinweg automatisch.</p>
+<p>Nachfolgend eine Auswahl mit den Podcasts die ich abonniert habe.<br />
+<span style="color: #999999;">Stand: 1. November 2016</span></p>
+<h3><img class="alignright wp-image-421" src="/wp-content/uploads/2016/11/logo_geektalk-150x150.png" alt="logo_geektalk" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_geektalk-150x150.png 150w, /wp-content/uploads/2016/11/logo_geektalk-300x300.png 300w, /wp-content/uploads/2016/11/logo_geektalk.png 400w" sizes="(max-width: 100px) 100vw, 100px" />#GeekTalk Podcast</h3>
+<p>Project #GeekTalk &#8211; www.GeekTalk.ch<br />
+<a id="podcast_popup_website" href="https://goo.gl/D5HNIE" target="_blank">geektalk.ch</a></p>
+<p class="podcast_popup_hr">#GeekTalk &#8211; der europäische Tech-Podcast</p>
+<p class="podcast_popup_hr">Geeks aus der Schweiz und Deutschland unterhalten sich über aktuelle Themen rund um Technik, Web und Gadgets. Unser Team könnt ihr auf unserem Blog einsehen www.geektalk.ch/team. Der GeekTalk ist ein Podcast Projekt vom <a href="https://twitter.com/pokipsie" target="_blank">@pokipsie</a> Network.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-420" src="/wp-content/uploads/2016/11/logo_apfelfunk-150x150.jpg" alt="logo_apfelfunk" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_apfelfunk-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_apfelfunk-300x300.jpg 300w, /wp-content/uploads/2016/11/logo_apfelfunk.jpg 400w" sizes="(max-width: 100px) 100vw, 100px" />Apfelfunk</h3>
+<p id="podcast_popup_author">Jean-Claude Frick &amp; Malte Kirchner<br />
+<a id="podcast_popup_website" href="https://goo.gl/d6bezV" target="_blank">apfelfunk.com</a></p>
+<p>Apfelfunk ist ein wöchentlicher Podcast über Apple-Themen. Jean-Claude Frick und Malte Kirchner berichten und bewerten darin die Neuigkeiten über den wichtigsten Computerkonzern der Welt.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-419" src="/wp-content/uploads/2016/11/logo_bitsundso.jpg" alt="logo_bitsundso" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_bitsundso.jpg 400w, /wp-content/uploads/2016/11/logo_bitsundso-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_bitsundso-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Bits und so</h3>
+<p id="podcast_popup_author">Undsoversum GmbH<br />
+<a id="podcast_popup_website" href="https://goo.gl/VDAIiY" target="_blank">bitsundso.de</a></p>
+<p>Die wöchentliche Talkrunde rund um Apple, Mac, iPod + iPhone, Gadgets und so. Fast live aus München.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-417" src="/wp-content/uploads/2016/11/logo_chaosradio.jpg" alt="logo_chaosradio" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_chaosradio.jpg 400w, /wp-content/uploads/2016/11/logo_chaosradio-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_chaosradio-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Chaosradio</h3>
+<p id="podcast_popup_author">Chaos Computer Club<br />
+<a id="podcast_popup_website" href="https://goo.gl/8RFHZN" target="_blank">chaosradio.ccc.de</a></p>
+<p>Chaosradio ist der unterhaltsame Live-Talk-Radio-Klassiker des Chaos Computer Clubs aus Berlin und eines der ältesten Tech-Radios überhaupt. Chaosradio informiert seit 1995 über wechselnde Themen rund um Technologie und Gesellschaft. Chaosradio sendet in der Regel am jeweils letzten Donnerstag eines Monats, an ungeraden Monaten auch auf dem Radiosender Fritz (RBB), jeweils von 22 bis 0 Uhr und lädt zur aktiven Teilnahme via Telefon und IRC ein.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-418" src="/wp-content/uploads/2016/11/logo_stadtfilter.jpg" alt="logo_stadtfilter" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_stadtfilter.jpg 400w, /wp-content/uploads/2016/11/logo_stadtfilter-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_stadtfilter-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />DigitalPodcast (Nerdfunk)</h3>
+<p id="podcast_popup_author">Radio Stadtfilter<br />
+<a id="podcast_popup_website" href="https://goo.gl/u0xjx6" target="_blank">nerdfunk.ch</a></p>
+<p>Das Digitalmagazin von Radio Stadtfilter: Immer live am Dienstagabend von 19:30 bis 20:00 Uhr auf www.stadtfilter.ch und hier als Podcast. Berichte, Reportagen, Gespräche aus der digitalen Welt. Mit Kummerbox live, der Show gegen Abstürze und Computerpannen, Tipps zur Digitalfotografie und einem Hang zu kreativen Themen.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-416" src="/wp-content/uploads/2016/11/logo_geekweek.jpg" alt="logo_geekweek" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_geekweek.jpg 400w, /wp-content/uploads/2016/11/logo_geekweek-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_geekweek-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />GeekWeek | TechPodcast</h3>
+<p id="podcast_popup_author">Tech-Podcast aus D, CH und USA. Powered by BR24.<br />
+<a id="podcast_popup_website" href="https://goo.gl/dkZkTW" target="_blank">geek-week.de</a></p>
+<p>Nothing But Tech &#8211; Aus Deutschland, der Schweiz und den USA. geek-week.de berichtet jede Woche über neue Entwicklungen aus der Online- und Tech-Welt. Geek-Week wird gemacht von Frederic Lardinois (Portland, USA), Marcus Schuler (München), Jean-Claude Frick (Bern) und Mustafa Isik (München).</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-415" src="/wp-content/uploads/2016/11/logo_heisedeveloper.jpg" alt="logo_heisedeveloper" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_heisedeveloper.jpg 400w, /wp-content/uploads/2016/11/logo_heisedeveloper-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_heisedeveloper-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />heise Developer: SoftwareArchitekTOUR-Podcast</h3>
+<p id="podcast_popup_author">heise Developer<br />
+<a id="podcast_popup_website" href="https://goo.gl/XyBblF" target="_blank">heise.de/developer</a></p>
+<p>Bekannte Softwareentwickler diskutieren über wichtige Softwarearchitekturthemen. Gehen Sie mit auf Tour und profitieren Sie von ihren Erfahrungen und Tipps.</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-414" src="/wp-content/uploads/2016/11/logo_raidenger.jpg" alt="logo_raidenger" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_raidenger.jpg 400w, /wp-content/uploads/2016/11/logo_raidenger-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_raidenger-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />Raidenger.de</h3>
+<p id="podcast_popup_author">Raiden<br />
+<a id="podcast_popup_website" href="https://goo.gl/X6vvHO" target="_blank">raidenger.de</a></p>
+<p>Der regelmäßige Podcast mit Themen rund um Technik, IT, Apps, Gadgets, Linux, Mac, Unix, Windows, Apps und anderen Podcasts, sowie Games, Tipps, Serien, Spielfilme, Bücher (eBooks), Tiere und Privates! In lockerer Runde wird über alles geredet was gerade so anfällt und interessant ist. Es gibt Empfehlungen zu allem Möglichen, viele Fragen und hoffentlich einige Antworten. Eben alles was Spaß, und (meistens) nicht dick macht!</p>
+<h3 id="podcast_popup_title_text"><img class="alignright wp-image-413" src="/wp-content/uploads/2016/11/logo_psychcast.jpg" alt="logo_psychcast" width="100" height="100" srcset="/wp-content/uploads/2016/11/logo_psychcast.jpg 400w, /wp-content/uploads/2016/11/logo_psychcast-150x150.jpg 150w, /wp-content/uploads/2016/11/logo_psychcast-300x300.jpg 300w" sizes="(max-width: 100px) 100vw, 100px" />PsychCast</h3>
+<p id="podcast_popup_author">Jan Dreher, Alexander Kugelstadt<br />
+<a id="podcast_popup_website" href="https://goo.gl/UcfQ7N" target="_blank">psychcast.de</a></p>
+<p>Der PsychCast ist eine Gesprächsreihe zu Psych-Themen und erscheint alle 14 Tage als Podcast.</p>
+<p>&nbsp;</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/lineares-fernsehen-und-fantastische-podcasts/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

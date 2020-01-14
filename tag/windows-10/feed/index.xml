@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Windows 10 &#8211; Oliver Gut</title>
+	<atom:link href="/tag/windows-10/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:45:00 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>Windows 10 &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Fix 0xc0000605 winload.efi boot error in Windows 10</title>
+		<link>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/</link>
+				<comments>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/#respond</comments>
+				<pubDate>Sun, 21 Aug 2016 21:00:23 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Ops]]></category>
+		<category><![CDATA[Blue Screen]]></category>
+		<category><![CDATA[Error]]></category>
+		<category><![CDATA[Windows 10]]></category>
+
+		<guid isPermaLink="false">/2016/fix-windows-10-0xc000060--winload-efi-boot-error/</guid>
+				<description><![CDATA[On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore. [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>On my Windows 10 workstation I subscribed to the Insider Preview program in order to get the latest and greatest Windows 10 builds. Unfortunately, I ignored several Windows notifications, which were trying to tell me to update my current Preview build to the latest build available. Otherwise I’m not able to use the system anymore.</p>
+<p>These days I got a blue screen (surprise), telling me that a component of the operation system has expired.</p>
+<p><strong>The only way to get out of this awkward situation, was to turn back time in Bios.</strong> Windows started as expected. After upgrading Windows to the latest build, blue screen has gone.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2016/fix-windows-10-0xc000060-winload-efi-boot-error/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>

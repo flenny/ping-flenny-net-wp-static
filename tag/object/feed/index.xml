@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>object &#8211; Oliver Gut</title>
+	<atom:link href="/tag/object/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>husband, daddy, .NET software engineer, nerd, geek, biker, jogger, addicted to coffee and tv series, using Windows at work, macOS at home and Android on the go</description>
+	<lastBuildDate>Sat, 10 Sep 2016 17:31:14 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.3.2</generator>
+
+<image>
+	<url>/wp-content/uploads/2016/08/cropped-default-post-32x32.png</url>
+	<title>object &#8211; Oliver Gut</title>
+	<link>/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Typ object mit der WCF übermitteln</title>
+		<link>/2012/typ-object-mit-der-wcf-ubermitteln/</link>
+				<comments>/2012/typ-object-mit-der-wcf-ubermitteln/#respond</comments>
+				<pubDate>Sat, 04 Feb 2012 00:00:28 +0000</pubDate>
+		<dc:creator><![CDATA[Oliver Gut]]></dc:creator>
+				<category><![CDATA[Dev]]></category>
+		<category><![CDATA[.NET Framework 4.0]]></category>
+		<category><![CDATA[ChannelFactory]]></category>
+		<category><![CDATA[DataContract]]></category>
+		<category><![CDATA[DataMember]]></category>
+		<category><![CDATA[object]]></category>
+		<category><![CDATA[WCF]]></category>
+
+		<guid isPermaLink="false">http://flenny.wordpress.com/?p=13</guid>
+				<description><![CDATA[Manchmal kann es sinnvoll sein, die Schnittstelle eines Services möglichst generisch zu halten und deshalb als Datentyp object zu definieren. Die Übermittlung des Typs object ist in der WCF aber nicht unproblematisch. Es gilt dabei zu beachten, dass der Absender wie auch der Empfänger in diesem Fall .NET einsetzen müssen und beide die gleichen Typendefinitionen [&#8230;]]]></description>
+								<content:encoded><![CDATA[<p>Manchmal kann es sinnvoll sein, die Schnittstelle eines Services möglichst generisch zu halten und deshalb als Datentyp object zu definieren. Die Übermittlung des Typs object ist in der WCF aber nicht unproblematisch. Es gilt dabei zu beachten, dass der Absender wie auch der Empfänger in diesem Fall .NET einsetzen müssen und beide die gleichen Typendefinitionen und Versionen referenzieren.</p>
+<p><strong>Die Idee</strong>: Der Absender serialisiert vor dem Versenden ein beliebiges Objekt in ein <code>byte[]</code>. Das Array wird anschliessend übertragen und auf der Gegenseite wieder in object umgewandelt. So lassen sich beliebige Daten übertragen so lange diese serialisierbar sind. Der Vorteil der unten stehenden Lösung besteht nun darin, dass während der Entwicklung normal gegen object programmiert werden kann. Die Umwandlung in ein <code>byte[]</code> für die Übertragung geschieht durch die Implementierung der <code>[OnSerializing]</code> und <code>[OnDeserialized]</code> Methoden automatisch.</p>
+<pre><code>
+using System;
+using System.IO;
+using System.Runtime.Serialization;
+using System.Runtime.Serialization.Formatters.Binary;
+
+namespace FlennyNET.LearningWCF.DataContract
+{
+    [Serializable]
+    [DataContract(Name = "DemoDataContainer",
+        Namespace = "http://flenny.wordpress.com/2012/02/03/typ-object-in-der-wcf/",
+        IsReference = true)]
+    public class CfleDemoDataContainer
+    {
+        [DataMember(Order = 1, Name = "Key")]
+        public string Key { get; set; }
+
+        // Hier kann ein beliebiger CLR-Typ untergebracht werden.
+        // Das Property wird nicht mit dem DataMemberAttribut dekoriert.
+        public object Data { get; set; }
+
+        // Die WCF serialisiert/ deserialisiert das Objekt vor und nach der Übertragung
+        // in ein byte[].
+        [DataMember(Order = 2, Name = "Data")]
+        private byte[] _abyteData;
+
+        // Serialisiert das object Data in ein byte[].
+        [OnSerializing]
+        private void OnSerializing(StreamingContext context)
+        {
+            using (MemoryStream objStream = new MemoryStream())
+                {
+                    BinaryFormatter objFormatter = new BinaryFormatter();
+                    objFormatter.Serialize(objStream, Data);
+
+                    _abyteData = objStream.ToArray();
+                }
+         }
+
+        // Deserialisiert das byte[] zurück nach object.
+        [OnDeserialized]
+        private void OnDeserialized(StreamingContext context)
+        {
+            using (MemoryStream objStream = new MemoryStream())
+                {
+                    objStream.Write(_abyteData, 0, _abyteData.Length);
+                    objStream.Seek(0, SeekOrigin.Begin);
+                    BinaryFormatter objFormatter = new BinaryFormatter();
+
+                    Data = objFormatter.Deserialize(objStream);
+                 }
+        }
+    }
+}</code></pre>
+<p>Ein Visual Studio 2010 Beispielprojekt kann <a href="https://skydrive.live.com/redir.aspx?cid=5a3e2471c6df7b9c&amp;resid=5A3E2471C6DF7B9C!289&amp;parid=5A3E2471C6DF7B9C!287&amp;authkey=!AN0WOSVDRrxuE08" target="_blank">hier</a> heruntergeladen werden.</p>
+]]></content:encoded>
+							<wfw:commentRss>/2012/typ-object-mit-der-wcf-ubermitteln/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+							</item>
+	</channel>
+</rss>
